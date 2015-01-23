@@ -16,6 +16,8 @@ permalink: pretty
 
 # Settings
 timezone: America/New_York
+analytics:
+  tracking_id: UA-53167467-5
 
 # Excludes
 exclude:
