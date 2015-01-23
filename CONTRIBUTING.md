@@ -90,7 +90,7 @@ help or ask over [email][email].
 [editorconfig]: http://editorconfig.org/
 [help-pr]: https://help.github.com/articles/creating-a-pull-request/
 [commit-message-formatting]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
-[email]: mailto:me@anishathalye.com
+[email]: mailto:team@hackmit.org
 [jekyll]: http://jekyllrb.com/
 
 <!--
