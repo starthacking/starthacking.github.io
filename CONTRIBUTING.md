@@ -6,9 +6,9 @@ of all kinds.
 For someone unfamiliar with technical matters, the best way to contribute is
 through [content requests](#content-requests) or [bug reports](#bug-reports).
 
-If you would like to author new content, awesome! You can read about [building
-the site](#building), read about our [development
-workflow](#development-workflow), or submit a [patch](#patches).
+If you would like to author new content, awesome! You can read about the [site
+setup](#setup), learn how to [build the site](#building), read about our
+[development workflow](#development-workflow), or submit a [patch](#patches).
 
 ## Content Requests
 
@@ -22,6 +22,14 @@ are greatly appreciated!
 
 When you [submit a bug report][issue], please include relevant information such
 as the page you were on and what exactly was wrong.
+
+### Setup
+
+StartHacking.org uses [Jekyll][jekyll], a simple static site generator.
+
+All the content is written in Markdown files with Liquid templating, sometimes
+with YAML front-matter. It's pretty self-explanatory, and it's very simple to
+start editing and authoring content.
 
 ### Building
 
@@ -83,6 +91,7 @@ help or ask over [email][email].
 [help-pr]: https://help.github.com/articles/creating-a-pull-request/
 [commit-message-formatting]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [email]: mailto:me@anishathalye.com
+[jekyll]: http://jekyllrb.com/
 
 <!--
 A good chunk of this guide came from Dotbot's contributing guide:
