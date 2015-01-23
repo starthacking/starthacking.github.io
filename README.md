@@ -1,0 +1,33 @@
+# StartHacking.org
+
+StartHacking.org is a collection of guides for setting up development
+environments for various platforms and applications.
+
+## Contributing
+
+StartHacking.org is a community effort, and we greatly appreciate
+contributions.
+
+Do you have a content request, bug report, or patch? Great! See
+[CONTRIBUTING.md][contributing] for information on what to do about that. This
+document also contains information about our development workflow.
+
+## Contributors
+
+<!--
+If you want to add yourself to this section, be sure to do so in a separate
+commit and separate pull request. Maintain consistency with the format of the
+list below, and append your name to the end of the list. Links must be to your
+GitHub profile, not an external website or anything else.
+-->
+
+* [Anish Athalye](https://github.com/anishathalye)
+
+## License
+
+Copyright (c) StartHacking.org. Released under a Creative Commons
+Attribution-ShareAlike 4.0 International License. See [LICENSE.md][license] for
+details.
+
+[contributing]: CONTRIBUTING.md
+[license]: LICENSE.txt
