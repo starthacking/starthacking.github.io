@@ -18,6 +18,14 @@
   }
 }
 
+nav {
+  @include media($medium-screen-up) {
+    li {
+      display: inline;
+    }
+  }
+}
+
 .wrapper {
   @include outer-container;
 }

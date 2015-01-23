@@ -3,15 +3,17 @@
   <div class="wrapper">
 
     <nav>
-      <i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <ul>
+        <li><i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
 
       {% for item in page.hierarchy %}
-        <i class="fa fa-angle-right"></i> <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a>
+        <li><i class="fa fa-angle-right"></i> <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a></li>
       {% endfor %}
 
       {% if page.title %}
-        <i class="fa fa-angle-right"></i> {{ page.title }}
+        <li><i class="fa fa-angle-right"></i> {{ page.title }}</li>
       {% endif %}
+      </ul>
     </nav>
 
     <hr>
