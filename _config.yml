@@ -1,0 +1,23 @@
+# Site settings
+title: Bootloader
+email: team@hackmit.org
+description: >
+  Guides to setting up development environments.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://yourdomain.com" # the base hostname & protocol for your site
+
+# Build settings
+markdown: kramdown
+
+# Permalinks
+permalink: pretty
+
+# Settings
+timezone: America/New_York
+
+# Excludes
+exclude:
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - README.md

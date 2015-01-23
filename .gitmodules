@@ -1,0 +1,6 @@
+[submodule "neat"]
+	path = libs/neat
+	url = https://github.com/thoughtbot/neat
+[submodule "libs/bourbon"]
+	path = libs/bourbon
+	url = https://github.com/thoughtbot/bourbon
