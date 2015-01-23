@@ -3,14 +3,14 @@
   <div class="wrapper">
 
     <nav>
-      &rangle; <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
+      <i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
 
       {% for item in page.hierarchy %}
-        &rangle; <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a>
+        <i class="fa fa-angle-right"></i> <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a>
       {% endfor %}
 
       {% if page.title %}
-        &rangle; {{ page.title }}
+        <i class="fa fa-angle-right"></i> {{ page.title }}
       {% endif %}
     </nav>
 
