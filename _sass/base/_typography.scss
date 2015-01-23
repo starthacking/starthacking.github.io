@@ -3,6 +3,9 @@ body {
   -webkit-font-smoothing: antialiased;
   background-color: $base-background-color;
   color: $base-font-color;
+  .light {
+    color: lighten($base-font-color, 45);
+  }
   font-family: $base-font-family;
   font-size: $base-font-size;
   line-height: $base-line-height;
@@ -52,9 +55,6 @@ h6 {
 
 p {
   margin: 0 0 ($base-spacing / 2);
-  .light & {
-    color: lighten($base-font-color, 45);
-  }
 }
 
 a {
@@ -109,4 +109,16 @@ cite {
   &:before {
     content: "\2014 \00A0";
   }
+}
+
+pre {
+  background-color: $light-background-color;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  padding: $base-spacing;
+}
+
+code,
+pre {
+  font-family: $code-font-family;
 }

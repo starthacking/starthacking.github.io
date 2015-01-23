@@ -1,6 +1,7 @@
 // Typography
-$base-font-family: $helvetica;
-$header-font-family: $base-font-family;
+$base-font-family: 'Lato', $helvetica;
+$header-font-family: 'Montserrat', $helvetica;
+$code-font-family: 'Anonymous Pro', $monospace;
 
 // Font Sizes
 $base-font-size: 1em;
@@ -29,6 +30,7 @@ $light-gray: #DDD;
 
 // Background Color
 $base-background-color: white;
+$light-background-color: #F9F9F9;
 
 // Font Colors
 $base-font-color: $dark-gray;
