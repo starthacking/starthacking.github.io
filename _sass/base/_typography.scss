@@ -8,6 +8,13 @@ body {
   line-height: $base-line-height;
 }
 
+nav {
+  font-family: $header-font-family;
+  line-height: $header-line-height;
+  margin: 0;
+  font-size: $nav-font-size;
+}
+
 h1,
 h2,
 h3,

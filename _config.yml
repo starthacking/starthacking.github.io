@@ -1,10 +1,12 @@
 # Site settings
 title: Start Hacking
+stylized: StartHacking.org
 email: team@hackmit.org
 description: >
-  Guides to setting up development environments.
+  A guide to setting up a development environment on any platform for any
+  project.
 baseurl: "" # the subpath of your site, e.g. /blog/
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://starthacking.org" # the base hostname & protocol for your site
 
 # Build settings
 markdown: kramdown

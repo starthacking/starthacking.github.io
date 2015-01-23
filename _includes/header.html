@@ -2,9 +2,17 @@
 
   <div class="wrapper">
 
-    <h1>
+    <nav>
       &rangle; <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a>
-    </h1>
+
+      {% for item in page.hierarchy %}
+        &rangle; <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a>
+      {% endfor %}
+
+      {% if page.title %}
+        &rangle; {{ page.title }}
+      {% endif %}
+    </nav>
 
     <hr>
 
