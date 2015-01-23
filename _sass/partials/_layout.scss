@@ -1,13 +1,3 @@
-@mixin span-columns-half {
-  @include span-columns(4);
-  @include media($medium-screen-up) {
-    @include span-columns(4);
-  }
-  @include media($large-screen-up) {
-    @include span-columns(6);
-  }
-}
-
 @mixin span-columns-full {
   @include span-columns(4);
   @include media($medium-screen-up) {
@@ -15,6 +5,16 @@
   }
   @include media($large-screen-up) {
     @include span-columns(12);
+  }
+}
+
+@mixin span-columns-half {
+  @include span-columns(4);
+  @include media($medium-screen-up) {
+    @include span-columns(4);
+  }
+  @include media($large-screen-up) {
+    @include span-columns(6);
   }
 }
 
