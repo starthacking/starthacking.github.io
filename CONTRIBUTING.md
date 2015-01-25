@@ -23,7 +23,7 @@ are greatly appreciated!
 When you [submit a bug report][issue], please include relevant information such
 as the page you were on and what exactly was wrong.
 
-### Setup
+## Setup
 
 StartHacking.org uses [Jekyll][jekyll], a simple static site generator.
 
@@ -31,7 +31,7 @@ All the content is written in Markdown files with Liquid templating, sometimes
 with YAML front-matter. It's pretty self-explanatory, and it's very simple to
 start editing and authoring content.
 
-### Building
+## Building
 
 It's very easy build and run StartHacking.org on your own computer.
 
@@ -43,7 +43,7 @@ For development purposes, it can also be helpful to run `bundle exec jekyll
 serve --watch`. This will watch the source for changes, rebuild when necessary,
 and serve the site at `http://localhost:4000`.
 
-### Development Workflow
+## Development Workflow
 
 We have a fairly simple development workflow. When working on a new feature,
 branch off `develop`. Pull requests are merged in using non-fast-forward merges
