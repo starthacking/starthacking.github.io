@@ -7,7 +7,7 @@ description: >
   project.
 baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://starthacking.org" # the base hostname & protocol for your site
-content_source: "https://github.com/starthacking/starthacking.github.io"
+content_source: "https://github.com/starthacking/starthacking.github.io/blob/develop/CONTRIBUTING.md#contributing"
 
 # Build settings
 markdown: kramdown
