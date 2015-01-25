@@ -1,0 +1,5 @@
+.page-content {
+  ul {
+    @extend %default-ul;
+  }
+}
