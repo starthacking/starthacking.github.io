@@ -24,6 +24,7 @@ $base-z-index: 0;
 
 // Colors
 $blue: #477DCA;
+$red: #C2364E;
 $dark-gray: #333;
 $medium-gray: #999;
 $light-gray: #DDD;
@@ -31,10 +32,12 @@ $light-gray: #DDD;
 // Background Color
 $base-background-color: white;
 $light-background-color: #F9F9F9;
+$bright-background-color: lighten($red, 45);
 
 // Font Colors
 $base-font-color: $dark-gray;
 $base-accent-color: $blue;
+$base-bright-color: $red;
 
 // Link Colors
 $base-link-color: $base-accent-color;

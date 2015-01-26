@@ -111,11 +111,24 @@ cite {
   }
 }
 
+code {
+  background-color: $bright-background-color;
+  color: $base-bright-color;
+  @include border-top-radius(5px);
+  @include border-bottom-radius(5px);
+  padding: $base-spacing / 4;
+}
+
 pre {
   background-color: $light-background-color;
   @include border-top-radius(5px);
   @include border-bottom-radius(5px);
   padding: $base-spacing;
+  code {
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+  }
 }
 
 code,
