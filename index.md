@@ -22,4 +22,4 @@ This guide is kind of like a wiki for hackers -- it's a community effort. We
 really appreciate all kinds of contributions, so if you have anything to add,
 please do so -- StartHacking.org is [open-source][source].
 
-[source]: https://github.com/starthacking/starthacking.github.io
+[source]: {{ site.github }}
