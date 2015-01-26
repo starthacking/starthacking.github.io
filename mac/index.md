@@ -30,4 +30,8 @@ your shell):
 export PATH=/usr/local/bin:$PATH
 {% endhighlight %}
 
+# Getting Started with [x]
+
+* [Node.js](node/)
+
 [brew]: http://brew.sh/
