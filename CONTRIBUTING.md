@@ -1,7 +1,7 @@
 # Contributing
 
-StartHacking.org is a community effort, and we greatly appreciate contributions
-of all kinds.
+StartHacking.org is a [community effort][contributors], and we greatly
+appreciate contributions of all kinds.
 
 For someone unfamiliar with technical matters, the best way to contribute is
 through [content requests](#content-requests) or [bug reports](#bug-reports).
@@ -92,6 +92,7 @@ help or ask over [email][email].
 [commit-message-formatting]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [email]: mailto:team@hackmit.org
 [jekyll]: http://jekyllrb.com/
+[contributors]: README.md#contributors
 
 <!--
 A good chunk of this guide came from Dotbot's contributing guide:

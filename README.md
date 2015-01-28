@@ -17,8 +17,8 @@ document also contains information about our development workflow.
 <!--
 If you want to add yourself to this section, be sure to do so in a separate
 commit and separate pull request. Maintain consistency with the format of the
-list below, and append your name to the end of the list. Links must be to your
-GitHub profile, not an external website or anything else.
+list below, and keep the list in alphabetical order (by last name). Links must
+be to your GitHub profile, not an external website or anything else.
 -->
 
 * [Anish Athalye](https://github.com/anishathalye)
