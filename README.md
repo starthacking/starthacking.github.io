@@ -23,6 +23,8 @@ be to your GitHub profile, not an external website or anything else.
 
 * [Anish Athalye](https://github.com/anishathalye)
 
+Should your name be here? If so, add it and submit a pull request!
+
 ## License
 
 Copyright (c) StartHacking.org. Released under a Creative Commons
