@@ -124,6 +124,10 @@ pre {
   @include border-top-radius(5px);
   @include border-bottom-radius(5px);
   padding: $base-spacing;
+  white-space: pre;
+  white-space: pre-wrap;
+  word-break: break-all;
+  word-wrap: break-word;
   code {
     background-color: transparent;
     color: inherit;
