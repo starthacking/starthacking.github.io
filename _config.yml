@@ -9,6 +9,7 @@ baseurl: "" # the subpath of your site, e.g. /blog/
 url: "http://starthacking.org" # the base hostname & protocol for your site
 github: "https://github.com/starthacking/starthacking.github.io"
 contributing: "https://github.com/starthacking/starthacking.github.io/blob/develop/CONTRIBUTING.md#contributing"
+license: "https://github.com/starthacking/starthacking.github.io/blob/develop/LICENSE.txt"
 
 # Build settings
 markdown: kramdown
