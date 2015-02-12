@@ -11,7 +11,7 @@ To begin, select your platform:
 
 # About
 
-StartHacking.org is a resource to help people start hacking.
+StartHacking.org is a resource to help people start [hacking][hacker].
 
 Right now, the focus is to provide high-quality resources to help hackers
 quickly set up development environments and related tools on their machines. In
@@ -25,3 +25,4 @@ you have anything to add, please do so -- StartHacking.org is
 
 [source]: {{ site.github }}
 [contributors]: https://github.com/starthacking/starthacking.github.io#contributors
+[hacker]: http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)
