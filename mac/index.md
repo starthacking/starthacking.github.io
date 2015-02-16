@@ -33,5 +33,6 @@ export PATH=/usr/local/bin:$PATH
 # Getting Started with [x]
 
 * [Node.js](node/)
+* [Android Studio](android-studio/)
 
 [brew]: http://brew.sh/
