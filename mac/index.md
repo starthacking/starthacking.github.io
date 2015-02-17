@@ -34,5 +34,6 @@ export PATH=/usr/local/bin:$PATH
 
 * [Node.js](node/)
 * [Android Studio](android-studio/)
+* [Xcode](xcode/)
 
 [brew]: http://brew.sh/
