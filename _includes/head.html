@@ -23,6 +23,10 @@
 
     ga('create', '{{ site.analytics.tracking_id }}', 'auto');
     ga('send', 'pageview');
-
+  </script>
+  <script>
+    if (window.location.hostname == "start.hackmit.org") {
+      window.location.hostname = "starthacking.org"
+    }
   </script>
 </head>
