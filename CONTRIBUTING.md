@@ -31,6 +31,12 @@ All the content is written in Markdown files with Liquid templating, sometimes
 with YAML front-matter. It's pretty self-explanatory, and it's very simple to
 start editing and authoring content.
 
+To start, simply clone this repository recursively and change directories.
+
+```
+git clone --recursive git@github.com:starthacking/starthacking.github.io.git && cd starthacking.github.io
+```
+
 ## Building
 
 It's very easy build and run StartHacking.org on your own computer.
