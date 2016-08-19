@@ -21,7 +21,8 @@ list below, and keep the list in alphabetical order (by last name). Links must
 be to your GitHub profile, not an external website or anything else.
 -->
 
-* [Anish Athalye](https://github.com/anishathalye)
+* [Anish Athalye](https://github.com/anishathalye) (HackMIT)
+* [Fernando Trujano](https://github.com/fertogo) (HackMIT)
 
 Should your name be here? If so, add it and submit a pull request!
 
