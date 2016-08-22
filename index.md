@@ -20,9 +20,11 @@ community.
 
 This guide is kind of like a wiki for hackers -- it's a [community
 effort][contributors]. We really appreciate all kinds of contributions, so if
-you have anything to add, please do so -- StartHacking.org is
-[open-source][source].
+you have anything to add, please [do so][contribute]!
+
+StartHacking.org is [open-source][source].
 
 [source]: {{ site.github }}
-[contributors]: https://github.com/starthacking/starthacking.github.io#contributors
+[contributors]: {{ site.url }}/contributors.html
 [hacker]: http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)
+[contribute]: {{ site.url }}/contributing.html
