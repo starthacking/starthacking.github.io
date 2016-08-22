@@ -14,6 +14,7 @@ be to your GitHub profile, not to an external website or anything else.
 -->
 
 * [Anish Athalye](https://github.com/anishathalye) (HackMIT)
+* [Claire Nord](https://github.com/cmnord) (HackMIT)
 * [Fernando Trujano](https://github.com/fertogo) (HackMIT)
 
 If you think you should be added to this list, submit an [issue][issue] or [pull request][help-pr]!

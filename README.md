@@ -22,6 +22,7 @@ be to your GitHub profile, not an external website or anything else.
 -->
 
 * [Anish Athalye](https://github.com/anishathalye) (HackMIT)
+* [Claire Nord](https://github.com/cmnord) (HackMIT)
 * [Fernando Trujano](https://github.com/fertogo) (HackMIT)
 
 Should your name be here? If so, add it and submit a pull request!
