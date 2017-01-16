@@ -76,53 +76,57 @@ Before getting to the actual code, switch back to the original view from the top
 
 In `viewDidLoad()`, add the following code after super.viewDidLoad() and change the placeholder text:
 
-    // This sets up the navigation controller (the bar at the top) to be a certain style, color, and tint.
-    let name = "ENTER NAME HERE"
-    self.title = "Good morning, \(name)"
-    self.navigationController!.navigationBar.barTintColor = UIColor(red: 42/255, green: 62/255, blue: 80/255, alpha: 1)
-    self.navigationController!.navigationBar.barStyle = .blackTranslucent
-    self.navigationController!.navigationBar.tintColor = UIColor.white 
+```swift
+// This sets up the navigation controller (the bar at the top) to be a certain style, color, and tint.
+let name = "ENTER NAME HERE"
+self.title = "Good morning, \(name)"
+self.navigationController!.navigationBar.barTintColor = UIColor(red: 42/255, green: 62/255, blue: 80/255, alpha: 1)
+self.navigationController!.navigationBar.barStyle = .blackTranslucent
+self.navigationController!.navigationBar.tintColor = UIColor.white 
 
-    // Calling the setupGIF function
-    setupGIF() 
+// Calling the setupGIF function
+setupGIF()
+```
 
 Underneath that add the following code: 
 
-    func setupGIF() {
-        /* gifString is the query we're going to be searching with using the Giphy.com API.
-        Before we do that, we escape the string properly. Then, we put everything together
-        in a completed searchURL and get the contents from the link */
-    
-        let gifString = "dj khaled"
-        let encodedString = gifString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
-        let searchURL = URL(string:"http://api.giphy.com/v1/gifs/translate?s=\(encodedString)&api_key=dc6zaTOxFJmzC")
-        let searchData = try? Data(contentsOf: searchURL!)
-    
-        /* The next thing we have to do is parse the JSON that is returned from the URL.
-        This involves accessing multiple dictionaries until we reach the gif link we're after. */
-    
-    do {
-        if let jsonResult = try JSONSerialization.jsonObject(with: searchData!, options: []) as? NSDictionary {
-            if let items = jsonResult["data"] as? NSDictionary {
-                if let images = items["images"] as? NSDictionary {
-                    if let gType = images["downsized"] as? NSDictionary {
-                        if let link = gType["url"] as? String {
-                            
-                            /* After we have the link, the only that's left to do is display it with the help of
-                            the UIImage+Gif.swift framework we added */
-                            
-                            let imageData = try? Data(contentsOf: URL(string: link)!)
-                            let gif = UIImage.gifWithData(imageData!)
-                            self.imageView.image = gif;
-                        }
+```swift
+func setupGIF() {
+    /* gifString is the query we're going to be searching with using the Giphy.com API.
+    Before we do that, we escape the string properly. Then, we put everything together
+    in a completed searchURL and get the contents from the link */
+
+    let gifString = "dj khaled"
+    let encodedString = gifString.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed)!
+    let searchURL = URL(string:"http://api.giphy.com/v1/gifs/translate?s=\(encodedString)&api_key=dc6zaTOxFJmzC")
+    let searchData = try? Data(contentsOf: searchURL!)
+
+    /* The next thing we have to do is parse the JSON that is returned from the URL.
+    This involves accessing multiple dictionaries until we reach the gif link we're after. */
+
+do {
+    if let jsonResult = try JSONSerialization.jsonObject(with: searchData!, options: []) as? NSDictionary {
+        if let items = jsonResult["data"] as? NSDictionary {
+            if let images = items["images"] as? NSDictionary {
+                if let gType = images["downsized"] as? NSDictionary {
+                    if let link = gType["url"] as? String {
+                        
+                        /* After we have the link, the only that's left to do is display it with the help of
+                        the UIImage+Gif.swift framework we added */
+                        
+                        let imageData = try? Data(contentsOf: URL(string: link)!)
+                        let gif = UIImage.gifWithData(imageData!)
+                        self.imageView.image = gif;
                     }
                 }
             }
         }
-    } catch let error as NSError {
-        print(error.localizedDescription)
-        }
     }
+} catch let error as NSError {
+    print(error.localizedDescription)
+    }
+}
+```
 
 Now, we're ready to test that everything works. 
 
@@ -161,40 +165,42 @@ Next, add `setupQuote()`  and `setupWeather()` in
 `viewDidLoad()` and add the following code block underneath
 `setupGIF()`:
 
-    func setupQuote() {
-        /* This is a slightly different way to make HTTP requests but the fundamentals are the same.
-        We're using Apple's NSURLSession framework to get the data returned from http://quotes.rest/qod.json */
-    
-        let url = URL(string: "http://quotes.rest/qod.json")
-        let session = URLSession.shared
-        let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
-            do {
-            
-                /* Again, this is where we start parsing the JSON until we reach the data we're after */
-            
-                if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-                    if let items = jsonResult["contents"] as? NSDictionary {
-                        if let quoteData = items["quotes"] as? NSArray {
-                            if let firstQuote = quoteData[0] as? NSDictionary {
-                            
-                                /* Once we reach the quote, all we have to do is display the text */
-                            
-                                let quoteText = firstQuote["quote"] as! String
-                                let quoteAuthor = firstQuote["author"] as! String
-                                DispatchQueue.main.async(execute: {
-                                    self.quoteTextView.text = "💭 Quote of the Day 💭\n\n\(quoteText)\n\n- \(quoteAuthor)"
-                                });
-                            }
+```swift
+func setupQuote() {
+    /* This is a slightly different way to make HTTP requests but the fundamentals are the same.
+    We're using Apple's NSURLSession framework to get the data returned from http://quotes.rest/qod.json */
+
+    let url = URL(string: "http://quotes.rest/qod.json")
+    let session = URLSession.shared
+    let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
+        do {
+        
+            /* Again, this is where we start parsing the JSON until we reach the data we're after */
+        
+            if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                if let items = jsonResult["contents"] as? NSDictionary {
+                    if let quoteData = items["quotes"] as? NSArray {
+                        if let firstQuote = quoteData[0] as? NSDictionary {
+                        
+                            /* Once we reach the quote, all we have to do is display the text */
+                        
+                            let quoteText = firstQuote["quote"] as! String
+                            let quoteAuthor = firstQuote["author"] as! String
+                            DispatchQueue.main.async(execute: {
+                                self.quoteTextView.text = "💭 Quote of the Day 💭\n\n\(quoteText)\n\n- \(quoteAuthor)"
+                            });
                         }
                     }
                 }
-            } catch let error as NSError {
-            print(error.localizedDescription)
             }
-        })
-    
-        task.resume()
-    }
+        } catch let error as NSError {
+        print(error.localizedDescription)
+        }
+    })
+
+    task.resume()
+}
+```
 
 Again, the code is pretty self-explanatory now that you've
 completed the GIF section. We're parsing the JSON returned from 
@@ -271,113 +277,120 @@ This makes sure that the storyboard view controller and the file is matched. Aft
 ![](https://quip.com/blob/KWDAAAiFNtr/LK8tKTUUSzxE07zYd_LSnw?a=uYsuam6kERicfXxWU2T9dC15VkYFXxA0GCS7Ruf5XgYa) 
 again and connect the respective UI elements with variable names (bolded) as so:
 
-    @IBOutlet weak var **countdownLabel**: UILabel!
-    @IBOutlet weak var **newsButton**: UIButton!
-    @IBOutlet weak var **xkcdImageView**: UIImageView!
-    @IBOutlet weak var **xkcdTitleLable**: UILabel!
+```swift
+@IBOutlet weak var **countdownLabel**: UILabel!
+@IBOutlet weak var **newsButton**: UIButton!
+@IBOutlet weak var **xkcdImageView**: UIImageView!
+@IBOutlet weak var **xkcdTitleLable**: UILabel!
+```
 
 Underneath that, declare a string:
 
-    var articleUrl = String()
+```swift
+var articleUrl = String()
+```
 
-Add helper methods in `viewDidLoad()`
+Add helper methods in `viewDidLoad()`:
 
-    setupCountdown();
-    setupNews();
-    setupXKCD();
+```swift
+setupCountdown();
+setupNews();
+setupXKCD();
+```
 
 And finally add the following code blocks to make everything work:
 
+```swift
+func setupCountdown() {
+    /* This sets up the format the date should be in */
 
-    func setupCountdown() {
-        /* This sets up the format the date should be in */
-    
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd"
-    
-        /* This initializes the two dates we want to find the time difference between */
-    
-        let targetDate: Date? = dateFormatter.date(from: "2017-06-20")
-        let todayDate: Date? = Date()
-    
-        /* After we have the difference between the two dates, we can display it with our label */
-    
-        let calendar = Calendar.init(identifier: Calendar.Identifier.gregorian);
-        let components = (calendar as NSCalendar?)?.components(.day, from:todayDate!, to:targetDate!, options: [])
-        let dateString = DateFormatter.localizedString(from: targetDate!, dateStyle: .short, timeStyle: .short); //format date correctly
-        let days = (components?.day!)!
-        self.countdownLabel.text = "📅 Days until \(dateString):\n\(days)"
-    }
+    let dateFormatter = DateFormatter()
+    dateFormatter.dateFormat = "yyyy-MM-dd"
 
-    func setupNews() {
-        /* This is the URL for getting the top NYTimes stories */
-    
-        let url = URL(string: "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=8085826bc22e436aa53e58765b1c38f6")
-        let session = URLSession.shared
-        let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
-            do {
-                if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-                    if let items = jsonResult["results"] as? NSArray {
+    /* This initializes the two dates we want to find the time difference between */
+
+    let targetDate: Date? = dateFormatter.date(from: "2017-06-20")
+    let todayDate: Date? = Date()
+
+    /* After we have the difference between the two dates, we can display it with our label */
+
+    let calendar = Calendar.init(identifier: Calendar.Identifier.gregorian);
+    let components = (calendar as NSCalendar?)?.components(.day, from:todayDate!, to:targetDate!, options: [])
+    let dateString = DateFormatter.localizedString(from: targetDate!, dateStyle: .short, timeStyle: .short); //format date correctly
+    let days = (components?.day!)!
+    self.countdownLabel.text = "📅 Days until \(dateString):\n\(days)"
+}
+
+func setupNews() {
+    /* This is the URL for getting the top NYTimes stories */
+
+    let url = URL(string: "https://api.nytimes.com/svc/topstories/v2/home.json?api-key=8085826bc22e436aa53e58765b1c38f6")
+    let session = URLSession.shared
+    let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
+        do {
+            if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                if let items = jsonResult["results"] as? NSArray {
+                
+                    /* Because we just want 1 story, we get the first item in the dictionary */
+                
+                    if let topArticle = items[0] as? NSDictionary {
+                        let articleTitle = topArticle["title"] as! String
+                        self.articleUrl = topArticle["url"] as! String
                     
-                        /* Because we just want 1 story, we get the first item in the dictionary */
+                        /* We set the title of the button to be the article title */
                     
-                        if let topArticle = items[0] as? NSDictionary {
-                            let articleTitle = topArticle["title"] as! String
-                            self.articleUrl = topArticle["url"] as! String
-                        
-                            /* We set the title of the button to be the article title */
-                        
-                            DispatchQueue.main.async(execute: {
-                                self.newsButton.setTitle(articleTitle, for: UIControlState())
-                            });
-                        }
+                        DispatchQueue.main.async(execute: {
+                            self.newsButton.setTitle(articleTitle, for: UIControlState())
+                        });
                     }
                 }
-            } catch let error as NSError {
-                print(error.localizedDescription)
             }
-        })
-    
-        task.resume()
-    }
-
-    /* This function will get "triggered" everytime the button is tapped.
-    In our case, we want it to open the article URL (in mobile Safari). */
-
-    @IBAction func buttonTapped(_ sender: UIButton) {
-        if let url = URL(string: self.articleUrl) {
-            UIApplication.shared.openURL(url)
+        } catch let error as NSError {
+            print(error.localizedDescription)
         }
-    }
+    })
 
-    func setupXKCD() {
-        /* This gets the most current xkcd comic */
-    
-        let url = URL(string: "http://xkcd.com/info.0.json")
-        let session = URLSession.shared
-        let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
-            do {
-                if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
-                    let imageLink = jsonResult["img"] as! String
-                    let title = jsonResult["title"] as! String
-                
-                    let url = URL(string: imageLink)
-                    let data = try? Data(contentsOf: url!)
-                
-                    /* Once we have the imageLink and title, we can display it. */
-                
-                    DispatchQueue.main.async(execute: {
-                        self.xkcdTitleLable.text = title;
-                        self.xkcdImageView.image = UIImage(data: data!)
-                    });
-                }
-            } catch let error as NSError {
-                print(error.localizedDescription)
-            }
-        })
-    
-        task.resume()
+    task.resume()
+}
+
+/* This function will get "triggered" everytime the button is tapped.
+In our case, we want it to open the article URL (in mobile Safari). */
+
+@IBAction func buttonTapped(_ sender: UIButton) {
+    if let url = URL(string: self.articleUrl) {
+        UIApplication.shared.openURL(url)
     }
+}
+
+func setupXKCD() {
+    /* This gets the most current xkcd comic */
+
+    let url = URL(string: "http://xkcd.com/info.0.json")
+    let session = URLSession.shared
+    let task = session.dataTask(with: url!, completionHandler: {(data, reponse, error) in
+        do {
+            if let jsonResult = try JSONSerialization.jsonObject(with: data!, options: []) as? NSDictionary {
+                let imageLink = jsonResult["img"] as! String
+                let title = jsonResult["title"] as! String
+            
+                let url = URL(string: imageLink)
+                let data = try? Data(contentsOf: url!)
+            
+                /* Once we have the imageLink and title, we can display it. */
+            
+                DispatchQueue.main.async(execute: {
+                    self.xkcdTitleLable.text = title;
+                    self.xkcdImageView.image = UIImage(data: data!)
+                });
+            }
+        } catch let error as NSError {
+            print(error.localizedDescription)
+        }
+    })
+
+    task.resume()
+}
+```
 
 Last but not least, switch over to `Main.storyboard`, control, click, and drag from the Button to the top middle button of the view controller:
 ![](https://quip.com/blob/KWDAAAiFNtr/Bm1hYi6entBO9dRzXWUNXw?a=MfbYNAr9acD86XVszpluo8c4hc5OaoI8LNofRaDEZdUa)

@@ -40,23 +40,27 @@ The first milestone we'll tackle is viewing all posts. In
 variables and methods, just like a class in Java or C++. Each
 `Yak` object will represent one yak a user has posted.
 
-    class Yak < ActiveRecord::Base
-    end
+```ruby
+class Yak < ActiveRecord::Base
+end
+```
 
 Let's assign all the yaks to a variable called `yaks` in the
 `get '/'` method. This will make all the yaks appear on the
 homepage. You can get all the `Yak`s every user has posted by
 calling the `all` method on the `Yak` class.
 
-    get '/' do
-        # BEGIN YOUR CODE HERE
-        
-        # Here, you should store all the Yaks in the database in a variable called `yaks`.
-        
-        # END YOUR CODE HERE
+```ruby
+get '/' do
+    # BEGIN YOUR CODE HERE
+    
+    # Here, you should store all the Yaks in the database in a variable called `yaks`.
+    
+    # END YOUR CODE HERE
 
-        erb :index, locals: { yaks: yaks }
-    end
+    erb :index, locals: { yaks: yaks }
+end
+```
 
 There should already be a line that calls the `erb` function.
 `erb` is a special function that will render the HTML that shows
@@ -79,15 +83,17 @@ rest of the method, add code that makes a new `Yak`, sets up the
 instance variables, and calls the `save` method on the object to
 save it to the database.
 
-    post '/new_yak' do  
-        contents = params['contents']
+```ruby
+post '/new_yak' do  
+    contents = params['contents']
 
-        # BEGIN YOUR CODE HERE
-  
-        # Here, you should create a new yak, initialize it with the data from the form, and then save it to the database.
-        # END YOUR CODE HERE
-        redirect to('/')
-    end
+    # BEGIN YOUR CODE HERE
+
+    # Here, you should create a new yak, initialize it with the data from the form, and then save it to the database.
+    # END YOUR CODE HERE
+    redirect to('/')
+end
+```
 
 The call to `redirect_to` at the end of the method means that
 after the user has posted a new yak, we'll take them back to the
@@ -106,16 +112,18 @@ upvoting. You'll notice that there are already some links for
 Upvote and Downvote in each yak's card. Clicking on the Upvote
 link will call the `post '/upvote'` method in `app.rb`. 
 
-    post '/upvote' do
-        yak_id = params['yak_id']
+```ruby
+post '/upvote' do
+    yak_id = params['yak_id']
 
-        # BEGIN YOUR CODE HERE
-  
-        # In this section, you should increment the yak's upvotes by 1 and return the new number of upvotes in json.
-        # (Note: This will be called via AJAX, so you don't need to render any html or redirect to any other page.)
+    # BEGIN YOUR CODE HERE
 
-        # END YOUR CODE HERE
-    end
+    # In this section, you should increment the yak's upvotes by 1 and return the new number of upvotes in json.
+    # (Note: This will be called via AJAX, so you don't need to render any html or redirect to any other page.)
+
+    # END YOUR CODE HERE
+end
+```
 
 The `yak_id` variable is an integer containing the ID of the yak
 that the user clicked upvote on. Fill in the rest of the method,
@@ -126,17 +134,19 @@ Now, do something similar for `downvote`, except decremenet the
 number of upvotes by one rather than increasing it. This method
 should look pretty similar to the `post '/upvote'` method.
 
-    post '/downvote' do
-        yak_id = params['yak_id']
-  
-        # BEGIN YOUR CODE HERE
-        
-        # In this section, you should decrement the yak's upvotes by 1.   
-        # This will be called via AJAX, so you don't need to render any html or redirect to any other page.
-        # Hint: You should be able to reuse some code from the '/upvote' method.
+```ruby
+post '/downvote' do
+    yak_id = params['yak_id']
 
-        # END YOUR CODE HERE
-    end
+    # BEGIN YOUR CODE HERE
+    
+    # In this section, you should decrement the yak's upvotes by 1.   
+    # This will be called via AJAX, so you don't need to render any html or redirect to any other page.
+    # Hint: You should be able to reuse some code from the '/upvote' method.
+
+    # END YOUR CODE HERE
+end
+```
 
 ### Sorting
 
@@ -146,23 +156,25 @@ Take a look at the `get '/hot'`method. This will get called when
 the user wants to view all the yaks, but sorted in descending
 order of number of upvotes.
 
-    get '/hot' do
-        # BEGIN YOUR CODE HERE
+```ruby
+get '/hot' do
+    # BEGIN YOUR CODE HERE
 
-        # Here, you should use the order method on the Yak class to get all the Yaks ordered by upvotes.
-        # The order method takes one parameter, which is the field you want to order by.
+    # Here, you should use the order method on the Yak class to get all the Yaks ordered by upvotes.
+    # The order method takes one parameter, which is the field you want to order by.
 
-        # END YOUR CODE HERE
-    end
+    # END YOUR CODE HERE
+end
 
-    get '/new' do
-        # BEGIN YOUR CODE HERE
+get '/new' do
+    # BEGIN YOUR CODE HERE
 
-        # Here, you should use the order method on the Yak class to get all the Yaks ordered by their `created_at` fields.
-        # The order method takes one parameter, which is the field you want to order by.
-  
-        # END YOUR CODE HERE
-    end
+    # Here, you should use the order method on the Yak class to get all the Yaks ordered by their `created_at` fields.
+    # The order method takes one parameter, which is the field you want to order by.
+
+    # END YOUR CODE HERE
+end
+```
 
 ### Extension: Comments
 
