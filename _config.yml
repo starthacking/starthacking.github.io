@@ -10,7 +10,7 @@ url: "http://starthacking.org" # the base hostname & protocol for your site
 github: "https://github.com/starthacking/starthacking.github.io"
 contributing: "http://starthacking.org/contributing.html"
 
-license: "https://github.com/starthacking/starthacking.github.io/blob/develop/LICENSE.txt"
+license: "https://github.com/starthacking/starthacking.github.io/blob/master/LICENSE.txt"
 
 # Build settings
 markdown: kramdown

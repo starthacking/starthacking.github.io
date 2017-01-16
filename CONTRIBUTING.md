@@ -61,11 +61,11 @@ and serve the site at `http://localhost:4000`.
 
 ### Workflow
 
-When working on a new feature, [branch][help-branch] off `develop`. Pull requests are merged 
-in using non-fast-forward merges using `git merge --no-ff`.
+When working on a new feature, [branch][help-branch] off `master`. Pull
+requests are merged in using non-fast-forward merges using `git merge --no-ff`.
 
-The `master` branch represents the live version of the site. New work should
-not branch off `master`.
+The `master` branch is the live version of the site that is available at
+http://starthacking.org.
 
 ### Patches
 
