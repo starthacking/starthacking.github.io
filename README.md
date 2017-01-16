@@ -26,6 +26,7 @@ be to your GitHub profile, not an external website or anything else.
 * [Fernando Trujano](https://github.com/fertogo) (HackMIT)
 * [Veeral Patel](https://github.com/veeralpatel) (TreeHacks 2016)
 * [Saurabh Sharan](https://github.com/saurabhsharan) (TreeHacks 2016)
+* [Sam Redmond](https://github.com/sredmond/) (TreeHacks 2016)
 
 Should your name be here? If so, add it and submit a pull request!
 

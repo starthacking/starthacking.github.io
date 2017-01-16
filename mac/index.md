@@ -32,10 +32,11 @@ export PATH=/usr/local/bin:$PATH
 
 # Getting Started with [x]
 
-* [Node.js](node/)
 * [Android Studio](android-studio/)
-* [Xcode](xcode/)
-* [SpriteBuilder](spritebuilder/)
+* [Javascript](javascript/)
+* [Node.js](node/)
 * [Ruby](ruby/)
+* [SpriteBuilder](spritebuilder/)
+* [Xcode](xcode/)
 
 [brew]: http://brew.sh/

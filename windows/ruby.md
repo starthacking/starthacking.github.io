@@ -7,7 +7,7 @@ hierarchy:
     path: "/windows/"
 ---
 
-## Overview
+## Ruby: TreeYaks app
 
 This guide will show you how to make an app called TreeYaks, which
 lets people post content and upvote/downvote what other people
@@ -22,7 +22,7 @@ Then, type `ruby app.rb`. Now, go to
 TreeYaks page, then you're all set and everything is installed 
 correctly! If not, it probably means something went wrong when installing Ruby and/or running `bundle install`.
 
-## TreeYaks
+## Getting Started
 
 We'll build TreeYaks in Ruby using a framework called
 [Sinatra][sinatra]. Sinatra is a web framework written in Ruby to
