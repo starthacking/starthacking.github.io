@@ -13,16 +13,19 @@ The easiest way to contribute is through [content requests](#content-requests) o
 [bug reports](#bug-reports). Describe what you want or what went wrong!
 
 If you want to contribute content, first [open an issue][issue] describing
-your addition to get early feedback on the content that you are adding. This will also help avoid wasted / duplicate efforts and ensure that your work is incorporated into the website.
+your addition to get early feedback on the content that you are adding.
+This will also help avoid wasted / duplicate efforts and ensure that
+your work is incorporated into the website.
 
-You can also read about the [site
-setup](#setup), how to [build the site](#building), our
-[development workflow](#development-workflow), and how to submit a [patch](#patches).
+You can also read about the [site setup](#setup), how to [build the
+site](#building), our [development workflow](#development-workflow),
+and how to submit a [patch](#patches).
 
 ### Content Requests
 
 Is there something you wish existed on StartHacking.org?
-Please describe it in a [content request][issue] by creating an [issue](issue-guide).
+Please describe it in a [content request][issue] by creating an
+[issue](issue-guide).
 
 ### Bug Reports
 
