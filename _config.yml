@@ -14,6 +14,10 @@ license: "https://github.com/starthacking/starthacking.github.io/blob/master/LIC
 
 # Build settings
 markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+highlighter: rouge
 
 # Permalinks
 permalink: pretty
