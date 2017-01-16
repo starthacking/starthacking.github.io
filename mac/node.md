@@ -10,6 +10,6 @@ hierarchy:
 Installing Node.js and NPM (the package manager for node) is really easy using
 Homebrew. Simply run the following command in a Terminal:
 
-{% highlight bash %}
+```bash
 brew install node
-{% endhighlight %}
+```

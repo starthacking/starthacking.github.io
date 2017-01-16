@@ -18,17 +18,17 @@ line tools.
 Installing [Homebrew][brew] is really easy. Copy and paste the following string
 into a Terminal prompt, and press enter.
 
-{% highlight bash %}
+```bash
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-{% endhighlight %}
+```
 
 Afterwards, make sure to add the Homebrew binary path to your `$PATH`. You can
 do this by appending the following line to your `.bashrc` (or equivalent for
 your shell):
 
-{% highlight bash %}
+```bash
 export PATH=/usr/local/bin:$PATH
-{% endhighlight %}
+```
 
 # Getting Started with [x]
 
