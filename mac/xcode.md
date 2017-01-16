@@ -7,7 +7,7 @@ hierarchy:
     path: "/mac/"
 ---
 
-### Overview
+## Overview
 
 You can install Xcode on your Mac through the
 [App Store][download]. It's free to download, so just click

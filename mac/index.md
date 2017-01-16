@@ -36,5 +36,6 @@ export PATH=/usr/local/bin:$PATH
 * [Android Studio](android-studio/)
 * [Xcode](xcode/)
 * [SpriteBuilder](spritebuilder/)
+* [Ruby](ruby/)
 
 [brew]: http://brew.sh/
