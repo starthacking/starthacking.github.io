@@ -3,8 +3,8 @@ layout: page
 title: Javascript
 hierarchy:
   -
-    name: "Windows"
-    path: "/windows"
+    name: "Mac"
+    path: "/mac"
 ---
 
 ## Javascript: Cal to Butt Chrome Extension
