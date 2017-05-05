@@ -8,6 +8,7 @@ To begin, select your platform:
 
 * [Windows](/windows/)
 * [Mac](/mac/)
+* [Linux](/linux/)
 
 # About
 
