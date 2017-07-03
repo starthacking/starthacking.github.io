@@ -41,7 +41,9 @@ as the page you were on and what exactly was wrong.
 
 StartHacking.org uses [Jekyll][jekyll], a static site generator.
 
-All the content is written in [Markdown][markdown] files with [Liquid][liquid] templating (the stuff enclosed in `{}`) and [YAML front-matter][yaml] (the stuff enclosed in `---` at the top).
+All the content is written in [Markdown][markdown] files with [Liquid][liquid]
+templating (the stuff enclosed in `{}`) and [YAML front-matter][yaml] (the
+stuff enclosed in `---` at the top).
 
 To start, clone this repository recursively and change directories.
 
@@ -52,7 +54,9 @@ cd starthacking.github.io
 
 ### Building
 
-To build and run StartHacking.org on your own computer, run the following inside the `starthacking.github.io` folder:
+To build and run StartHacking.org on your own computer, first 
+[install Ruby][ruby], then [bundler][bundler], then run the following inside
+the `starthacking.github.io` folder:
 
 Run `bundle install` to fetch and install dependencies.
 
@@ -101,6 +105,8 @@ help or ask over [email][email].
 [commit-message-formatting]: http://tbaggery.com/2008/04/19/a-note-about-git-commit-messages.html
 [email]: mailto:team@hackmit.org
 [jekyll]: http://jekyllrb.com/
+[ruby]: https://www.ruby-lang.org/en/documentation/installation/
+[bundler]: http://bundler.io/
 [contributors]: README.md#contributors
 [starthacking]: http://starthacking.org
 [issue-guide]: https://guides.github.com/features/issues/
