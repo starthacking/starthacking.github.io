@@ -5,8 +5,8 @@ categories:
   - mac
 hierarchy:
   -
-    name: "Mac"
-    path: "/mac/"
+    name: "Topics"
+    path: "/topics"
 ---
 
 You can install SpriteBuilder on your Mac through the [App Store][download].
