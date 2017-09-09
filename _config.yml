@@ -20,7 +20,7 @@ kramdown:
 highlighter: rouge
 
 # Permalinks
-permalink: pretty
+permalink: /:categories/:title/
 
 # Settings
 timezone: America/New_York

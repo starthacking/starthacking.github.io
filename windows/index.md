@@ -5,6 +5,8 @@ title: Windows
 
 # Getting Started with [x]
 
-* [Android Studio](android-studio/)
-* [Javascript](javascript/)
-* [Ruby](ruby/)
+{% for post in site.posts %}
+    {% if post.categories contains 'windows' %}
+* [{{ post.title }}]({{ post.url }})
+    {% endif %}
+{% endfor %}

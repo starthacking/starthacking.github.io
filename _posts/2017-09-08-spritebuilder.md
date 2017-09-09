@@ -1,6 +1,8 @@
 ---
 layout: page
 title: SpriteBuilder
+categories:
+  - mac
 hierarchy:
   -
     name: "Mac"

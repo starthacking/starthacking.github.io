@@ -32,11 +32,10 @@ export PATH=/usr/local/bin:$PATH
 
 # Getting Started with [x]
 
-* [Android Studio](android-studio/)
-* [Javascript](javascript/)
-* [Node.js](node/)
-* [Ruby](ruby/)
-* [SpriteBuilder](spritebuilder/)
-* [Xcode](xcode/)
+{% for post in site.posts %}
+    {% if post.categories contains 'mac' %}
+* [{{ post.title }}]({{ post.url }})
+    {% endif %}
+{% endfor %}
 
 [brew]: http://brew.sh/
