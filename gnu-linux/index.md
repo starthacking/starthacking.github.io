@@ -1,12 +1,12 @@
 ---
 layout: page
-title: Windows
+title: GNU/Linux
 ---
 
 # Getting Started with [x]
 
-TODO: there's quite a bit of stuff you need to set up to start
-doing dev on Windows.
+If you've set up GNU/Linux on your computer, you probably know
+enough to get a dev environment set up as well.
 
 {% for post in site.posts %}
     {% if post.categories contains 'windows' %}
