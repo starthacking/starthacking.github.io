@@ -2,28 +2,47 @@
 layout: page
 ---
 
+# Welcome :tada:
+
+Welcome to StartHacking!
+
+#### What is hacking? :sunglasses:
+
+No, it’s not digitally breaking into banks or other illegal activity,
+we’re talking about writing software for fun. [Hacker
+culture][hacker] is about making
+neat technical projects and learning along the way. Getting started is
+hard, so we created this website to help!
+
+#### Is this for me? :thinking:
+
+Whether you’re on your way to a hackathon, or just want to learn about
+coding, this website is for you.
+
+StartHacking is an effort to give more people the tools and resources
+they need to start building software. Whether you are completely new
+to programming or have already attended a few hackathons, StartHacking
+can help you learn the skills you need for your next project. From
+learning new coding languages to building small projects and mastering
+APIs, StartHacking will show you the ropes. Welcome to the world of
+hacking!
+
 # Get Started
 
 To begin, select your platform:
 
-* [Windows](/windows/)
 * [Mac](/mac/)
+* [Windows](/windows/)
+* [GNU/Linux](/gnu-linux/)
 
 # About
 
-StartHacking.org is a resource to help people start [hacking][hacker].
-
-Right now, the focus is to provide high-quality resources to help hackers
-quickly set up development environments and related tools on their machines. In
-the future, this site could evolve into pretty much anything -- it's up to the
-community.
-
-This guide is kind of like a wiki for hackers -- it's a [community
-effort][contribute]. We really appreciate all kinds of contributions, so if
-you have anything to add, please [do so][contribute]!
+This guide is a wiki for hackers -- it's a [community
+effort][contribute]. We really appreciate all kinds of contributions,
+so if you have anything to add, please [do so][contribute]!
 
 StartHacking.org is [open-source][source].
 
 [source]: {{ site.github }}
-[hacker]: http://en.wikipedia.org/wiki/Hacker_(programmer_subculture)
+[hacker]: https://en.wikipedia.org/wiki/Hacker_culture
 [contribute]: {{ site.url }}/contributing.html
