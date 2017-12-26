@@ -35,3 +35,5 @@ exclude:
   - README.md
   - LICENSE.txt
 
+plugins:
+  - jemoji
