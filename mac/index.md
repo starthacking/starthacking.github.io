@@ -22,13 +22,21 @@ into a Terminal prompt, and press enter.
 ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 ```
 
-Afterwards, make sure to add the Homebrew binary path to your `$PATH`. You can
-do this by appending the following line to your `.bashrc` (or equivalent for
+Afterwards, make sure to add the Homebrew binary path to your `$PATH`. The `$PATH` is where
+your computer goes to look for executables like Homebrew (specifically, the command line tool
+`brew`) to run. You can do this by appending the following line to your `.bashrc` (or equivalent for
 your shell):
 
 ```bash
 export PATH=/usr/local/bin:$PATH
 ```
+
+Finally, make sure you have Python 3 installed! You can do that by running the following command.
+```bash
+brew install python3
+```
+
+Now you're all set to start hacking!
 
 # Getting Started with [x]
 
