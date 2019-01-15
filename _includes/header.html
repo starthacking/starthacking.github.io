@@ -13,11 +13,94 @@
       {% if page.title %}
         <li><i class="fa fa-angle-right"></i> {{ page.title }}</li>
       {% endif %}
+
+      <li2 style="float:right" class="dropdown"><a href="/topics/" class="dropbtn">Tutorials</a>
+        <div class="dropdown-content">
+          <a href="/python101/">Python 101</a>
+          <a href="/web/">Web apps</a>
+          <a href="/iphone/">iPhone apps</a>
+          <a href="/chrome/">Chrome apps</a>
+          <a href="/android/">Android apps</a>
+      </div>
+      </li2>
+      <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
+        <div class="dropdown-content">
+          <a href="/mac/">Mac</a>
+          <a href="/windows/">Windows</a>
+          <a href="/gnu-linux/">GNU/Linux</a>
+          </div></li2>
+      <li2 style="float:right" class ="dropdown"><a href="{{ site.baseurl }}/" class="dropbtn">Home</a></li2>
       </ul>
     </nav>
-
     <hr>
 
   </div>
+  <style>
+    li2 {
+    float: left;
+    display: inline;
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
+  }
+    li {
+      font-size: 18px;
+    }
+
+  li2 a:hover, .dropdown:hover .dropbtn {
+    background-color: #DDD;
+    /* padding: 14px 16px; */
+  }
+  li2 a, .dropbtn {
+    display: inline;
+    color: #00979e;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
+  }
+
+
+  li2.dropdown {
+    display: inline-block;
+    padding: 14px 10px;
+  }
+
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+  }
+
+  .dropdown-content a {
+    color: #00979e;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .dropdown-content a:hover {
+    background-color: #f1f1f1;
+    color: #065c61;}
+
+  .dropdown:hover .dropdown-content {
+    display: block;
+  }
+  </style>
+  
+
+  <!-- <div class="topnav">
+    <a class="active" href="#home">Home</a>
+    <a href="#news">News</a>
+    <a href="#contact">Contact</a>
+    <a href="#about">About</a>
+    
+  </div> -->
+
+
 
 </header>
