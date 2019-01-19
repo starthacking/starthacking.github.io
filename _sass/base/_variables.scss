@@ -5,8 +5,8 @@ $code-font-family: 'Anonymous Pro', $monospace;
 
 // Font Sizes
 $base-font-size: 1em;
-$h1-font-size: $base-font-size * 2.25;
-$h2-font-size: $base-font-size * 2;
+$h1-font-size: $base-font-size * 2.5;
+$h2-font-size: $base-font-size * 2.2;
 $h3-font-size: $base-font-size * 1.75;
 $h4-font-size: $base-font-size * 1.5;
 $h5-font-size: $base-font-size * 1.25;
@@ -23,21 +23,28 @@ $base-spacing: $base-line-height * 1em;
 $base-z-index: 0;
 
 // Colors
+$yellow-medium: #fcb914;
+$yellow-dark: #f9a600;
+$yellow-light: #ffe7ad;
+$teal: #00979e;
 $blue: #477DCA;
 $red: #C2364E;
-$dark-gray: #333;
+$dark-gray: #372414;
 $medium-gray: #999;
 $light-gray: #DDD;
 
 // Background Color
 $base-background-color: white;
 $light-background-color: #F9F9F9;
-$bright-background-color: lighten($red, 45);
+$bright-background-color: lighten($yellow-dark, 45);
 
 // Font Colors
 $base-font-color: $dark-gray;
-$base-accent-color: $blue;
+$base-accent-color: $teal;
 $base-bright-color: $red;
+
+// Heading Colors
+
 
 // Link Colors
 $base-link-color: $base-accent-color;

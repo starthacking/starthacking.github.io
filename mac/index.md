@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Mac
+title: Mac Setup
 ---
 
 # First Steps
@@ -39,6 +39,7 @@ brew install python3
 Now you're all set to start hacking!
 
 # Getting Started with [x]
+<p></p>
 
 {% for post in site.posts %}
     {% if post.categories contains 'mac' %}

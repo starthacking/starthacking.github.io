@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GNU/Linux
+title: GNU/Linux Setup
 ---
 
 # First Steps
@@ -9,7 +9,10 @@ There are many different GNU/Linux distros, but this guide is going to cover Ubu
 # Editors
 If you're planning to write code, you're going to need a way to edit files! The first thing you'll need to decide while picking an editor is whether you prefer a graphical editor or a keystroke based editor. A graphical editor is like a normal computer program, where you interact with your mouse and keyboard. A keystroke based editor is an editor where you interact using your keyboard for everything. We only recommend keystroke based editors once you are more comfortable while programming. Two of the most popular graphical editors are [Atom](https://atom.io) and [Brackets](https://brackets.io), while two of the most popular keystoke based editors are `vim` and `emacs`.
 
+Now you're all set to start hacking!
+
 # Getting Started with [x]
+<p></p>
 
 {% for post in site.posts %}
     {% if post.categories contains 'gnu-linux' %}
