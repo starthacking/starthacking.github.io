@@ -18,6 +18,10 @@ nav {
   font-size: $nav-font-size;
 }
 
+#main-welcome{
+  color:$dark-gray;
+}
+
 h1,
 h2,
 h3,
@@ -27,14 +31,19 @@ h6 {
   font-family: $header-font-family;
   line-height: $header-line-height;
   margin: 0;
+  color: $base-accent-color;
+  letter-spacing: 0.02em;
 }
 
 h1 {
   font-size: $h1-font-size;
+  color: $yellow-medium;
+  letter-spacing: 0.03em;
 }
 
 h2 {
   font-size: $h2-font-size;
+  letter-spacing: 0.03em;
 }
 
 h3 {

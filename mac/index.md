@@ -2,8 +2,11 @@
 layout: page
 title: Mac Setup
 ---
+# Mac Setup
 
-# First Steps
+<p></p>
+
+## First Steps
 
 Before doing any serious hacking, you should install the Command Line Tools for
 Xcode and Homebrew. The CLI tools contain utilities and compilers such as make,
@@ -38,7 +41,8 @@ brew install python3
 
 Now you're all set to start hacking!
 
-# Getting Started with [x]
+## Getting Started with [x]
+
 <p></p>
 
 {% for post in site.posts %}
