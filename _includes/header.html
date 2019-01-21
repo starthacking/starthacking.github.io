@@ -1,9 +1,9 @@
 <header class="site-header">
 
   <div class="wrapper">
-
     <nav>
-      <ul>
+      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';"/>
+      <ul id="nav-menu">
         <li><i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
 
       {% for item in page.hierarchy %}
@@ -92,14 +92,14 @@
     display: block;
   }
   </style>
-  
+
 
   <!-- <div class="topnav">
     <a class="active" href="#home">Home</a>
     <a href="#news">News</a>
     <a href="#contact">Contact</a>
     <a href="#about">About</a>
-    
+
   </div> -->
 
 
