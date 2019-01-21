@@ -1,6 +1,6 @@
 ---
 layout: page
-title: GNU/Linux Setup
+title: GNU / Linux Setup
 ---
 
 # First Steps
