@@ -3,7 +3,7 @@ layout: page
 title: GNU / Linux Setup
 ---
 
-# GNU/ Linus Setup
+# GNU/ Linux Setup
 
 <p></p>
 
