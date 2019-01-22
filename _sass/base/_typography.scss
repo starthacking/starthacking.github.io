@@ -4,7 +4,7 @@ body {
   background-color: $base-background-color;
   color: $base-font-color;
   .light {
-    color: lighten($base-font-color, 45);
+    color: $gray-footer;
   }
   font-family: $base-font-family;
   font-size: $base-font-size;
@@ -70,23 +70,20 @@ a {
   @include transition(color 0.1s linear);
   color: $base-link-color;
   .light & {
-    color: lighten($base-link-color, 25);
+    color: $footer-link;
   }
   text-decoration: none;
 
   &:hover {
     color: $hover-link-color;
     .light & {
-      color: lighten($hover-link-color, 25);
+      color: $footer-link;
     }
   }
 
   &:active, &:focus {
     color: $hover-link-color;
     outline: none;
-    .light & {
-      color: lighten($hover-link-color, 25);
-    }
   }
 }
 
