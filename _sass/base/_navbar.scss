@@ -34,77 +34,77 @@
 }
 
 li2 {
-float: left;
-display: inline;
-display: block;
-padding: 8px;
-background-color: #ffffff;
-font-size: 15px;
+    float: left;
+    display: inline;
+    display: block;
+    padding: 8px;
+    background-color: #ffffff;
+    font-size: 15px;
 }
 li {
-  font-size: 18px;
+      font-size: 18px;
 }
 
 li2 a:hover, .dropdown:hover .dropbtn {
-background-color: #DDD;
-/* padding: 14px 16px; */
+    background-color: #DDD;
+    /* padding: 14px 16px; */
 }
 li2 a, .dropbtn {
-display: inline;
-color: #00979e;
-text-align: center;
-padding: 8px 10px;
-text-decoration: none;
+    display: inline;
+    color: #00979e;
+    text-align: center;
+    padding: 8px 10px;
+    text-decoration: none;
 }
 
 
 li2.dropdown {
-display: inline-block;
-@include tablet-up{
-    padding: 14px 10px;
-}
-@include mobile-large{
-    padding: 14px 0;
-}
+    display: inline-block;
+    @include tablet-up{
+        padding: 14px 10px;
+    }
+    @include mobile-large{
+        padding: 14px 0;
+    }
 
 }
 
 .dropdown-content {
-display: none;
-position: absolute;
-background-color: #f9f9f9;
-@include tablet-up{
-    min-width: 140px;
-}
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    @include tablet-up{
+        min-width: 140px;
+    }
 
-@include mobile-large{
-    min-width: 120px;
-}
-box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-z-index: 1;
+    @include mobile-large{
+        min-width: 120px;
+    }
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
 .dropdown-content a {
-color: #00979e;
-@include tablet-up{
-    padding: 12px 16px;
-}
-@include mobile-large{
-    padding: 8px 10px;
-}
+    color: #00979e;
+    @include tablet-up{
+        padding: 12px 16px;
+    }
+    @include mobile-large{
+        padding: 8px 10px;
+    }
 
-text-decoration: none;
-display: block;
-text-align: left;
-@include mobile-large{
-    font-size: .8em;
-}
+    text-decoration: none;
+    display: block;
+    text-align: left;
+    @include mobile-large{
+        font-size: .8em;
+    }
 }
 
 .dropdown-content a:hover {
-background-color: #f1f1f1;
-color: #065c61;}
+    background-color: #f1f1f1;
+    color: #065c61;}
 
-.dropdown:hover .dropdown-content {
-display: block;
+    .dropdown:hover .dropdown-content {
+    display: block;
 }
