@@ -35,9 +35,5 @@ exclude:
   - README.md
   - LICENSE.txt
 
-gems: [bourbon,neat]
-
 plugins:
   - jemoji
-  - bourbon
-  - neat
