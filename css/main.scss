@@ -3,9 +3,9 @@
 ---
 @charset "utf-8";
 
-@import "bourbon";
+@import "../bourbon/app/assets/stylesheets/bourbon";
 @import "base/base";
-@import "neat";
+@import "../neat/app/assets/stylesheets/neat";
 
 @import "partials/layout";
 @import "partials/style";
