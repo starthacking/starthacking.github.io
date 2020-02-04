@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Start Here</title>
+  <meta name="description" content="A Place to Start Hacking">
+
+  <link rel="stylesheet" href="/css/main.css">
+  <link rel="canonical" href="http://localhost:4000/iphone/">
+  <link rel="alternate" type="application/rss+xml" title="Start Hacking" href="http://localhost:4000/feed.xml" />
+
+  <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+  <link href='//fonts.googleapis.com/css?family=Montserrat:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Anonymous+Pro:300,400,700' rel='stylesheet' type='text/css'>
+
+  <script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-63828172-14', 'auto');
+    ga('send', 'pageview');
+
+  </script>
+</head>
+
+
+  <body>
+
+    <header class="site-header">
+
+  <div class="wrapper">
+    <nav>
+      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='/';"/>
+      <ul id="nav-menu">
+        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-title" href="/">Start Hacking</a></li>
+
+      
+        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-nav" href="/topics">Topics</a></li>
+      
+
+      
+        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> Start Here</li>
+      
+
+      <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
+        <div class="dropdown-content">
+          <a href="/python101">Python 101</a>
+          <a href="/web/">Web apps</a>
+          <a href="/iphone/">iPhone apps</a>
+          <a href="/chrome/">Chrome apps</a>
+          <a href="/android/">Android apps</a>
+          <a href="/other/">Helpful links</a>
+      </div>
+      </li2>
+      <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
+        <div class="dropdown-content">
+          <a href="/mac/">Mac</a>
+          <a href="/windows/">Windows</a>
+          <a href="/gnu-linux/">GNU / Linux</a>
+          </div></li2>
+      <li2 style="float:right" class ="dropdown"><a href="/start-here/index.html" class="dropbtn">Start Here</a></li2>
+      <li2 style="float:right" class ="dropdown"><a href="/" class="dropbtn">Home</a></li2>
+      </ul>
+    </nav>
+    <br class="small-tablet-down">
+    <hr>
+
+  </div>
+  <style>
+
+  </style>
+
+
+
+
+</header>
+
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <article class="post-content">
+    <h1 id="start-here">Start Here</h1>
+
+<p></p>
+
+<div id = "start-header" style = "display:none"> <h2> Lets Get Started! </h2>
+<p></p>
+</div>
+
+<div id = "git" style = "display:none">
+    <h3>Git</h3>
+
+    <p>One of the most important skills in programming is working as a team. 
+    Collaborating on the same files and making changes to the same line of code can be difficult and result in conflicting versions.
+    GitHub provide a convenient solution by making version control simple through the command line (like Terminal or Windows Powershell).
+    To <i>git</i> started (haha git it?), click through our Git and command line <a href = "/git/">tutorial</a>.</p>
+</div>
+<div id = "python" style = "display:none">python</div>
+<div id = "html/css" style = "display:none">html/css</div>
+<div id = "javascript" style = "display:none">javascript</div>
+<div id = "swift" style = "display:none">swift</div>
+<div id = "android" style = "display:none">android</div>
+<div id = "node" style = "display:none">node</div>
+<div id = "react" style = "display:none">react</div>
+<div id = "chrome-apps" style = "display:none">chrome-apps</div>
+<div id = "flask" style = "display:none">flask</div>
+<div id = "databases" style = "display:none">databases</div>
+
+<div id = "q1" style = "display:block">
+    <h3>Git and Command Line</h3> 
+    <p>Do you have experience with GitHub through Terminal or Windows Powershell?</p>
+    <select id = "q1-select">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+    <button onClick = renderNext()>Next</button>
+</div>
+
+<div id = "q2" style = "display:none">
+    <h3>Programming Experience</h3>
+    <p>Have you programmed in the past?</p>
+    <select id = "q2-select">
+        <option>No</option>
+        <option>Yes</option>
+      </select>
+    <button onClick = renderNext()>Next</button>
+</div>
+
+<div id = "q3-ii" style = "display:none">
+    <h3>Which languages have you worked with?</h3>
+    <div id="q3-ii-select">
+      <input id="checkbox-0" type = "checkbox">Python <br>
+      <input id="checkbox-1" type = "checkbox">Flask <br>
+      <input id="checkbox-2" type = "checkbox">HTML <br>
+      <input id="checkbox-3" type = "checkbox">CSS <br>
+      <input id="checkbox-4" type = "checkbox">Javascript <br>
+      <input id="checkbox-5" type = "checkbox">React <br>
+  </div>
+  <p></p>
+<button onClick = renderNext()>Next</button>
+</div>
+
+<div id = "q4" style = "display:none">
+    <h3>Project Interest</h3>
+    <p>If you could only pick one, which of the following projects is best for you?</p>
+    <select id = "q4-select">
+        <option>Create a game using Python!</option>
+        <option>A Pythony Flasky option!</option>
+        <option>Learn how to integrate databases with frameworks like Flask</option>
+        <option>Build a web app for Chrome</option>
+        <option>Use HTML, CSS, and Javascript to build a website</option>
+        <option>Build a web app using frameworks like React</option>
+        <option>Build a web app using Javascript and Node.js</option>
+        <option>Develop a mobile app for iPhones</option>
+        <option>Develop a mobile app for Android phones</option>
+    </select>
+    <button onClick = renderNext()>Finish</button>
+</div>
+
+<div id = "q3-i" style = "display:none">
+    <h3>Project Interest</h3>
+    <p>If you could only pick one, which of the following projects is best for you?</p>
+    <select id = "q3-i-select">
+        <option>Create an interactive game while learning the basics of programming</option>
+        <option>Another python option that sounds somewhat interesting</option>
+        <option>Build a personal homepage</option>
+        <option>Design a highly customizable website for a club, business, or organization</option>
+        <option>Build a game or tool for an iPhone</option>
+        <option>Build a game or tool for an Andriod phone</option>
+    </select>
+    <button onClick = renderNext()>Finish</button>
+<div>
+
+
+
+
+<script>
+    var currentID = "q1", q1Ans = "", q2Ans = "", q3iAns = "", q3iiAns = "", q4Ans = "";
+
+    function renderNext() {
+        document.getElementById(currentID).style.display = "none";
+        if (currentID == "q1"){
+            var e = document.getElementById("q1-select");
+            q1Ans = e.selectedIndex;
+            currentID = "q2";
+        }
+        else if (currentID == "q2") {
+            var e = document.getElementById("q2-select");
+            q2Ans = e.selectedIndex;
+            if (q2Ans == 0) currentID = "q3-i";
+            else currentID = "q3-ii";
+        }
+        else if (currentID == "q3-i") {
+            var e = document.getElementById("q3-i-select");
+            q3iAns = e.selectedIndex;
+            currentID = "";
+            finish()
+        }
+        else if (currentID == "q3-ii") {
+            var e = document.getElementById("q3-ii-select");
+            q3iiAns = [];
+            for (var i = 0; i < 6; i++) {
+                if (document.getElementById("checkbox-" + i).checked) q3iiAns.push(true);
+                else q3iiAns.push(false);
+            }
+            currentID = "q4";
+        }
+        else if (currentID == "q4") {
+            var e = document.getElementById("q4-select");
+            q4Ans = e.selectedIndex;
+            currentID = "";
+            finish()
+        }
+        if (currentID != "") document.getElementById(currentID).style.display = "block";
+    }
+
+    function finish() {
+        visibleIDs = ["start-header"];
+        if (q1Ans == 0) visibleIDs.push("git");
+        if (q2Ans == 0) { // beginners track
+            console.log("selected index is" + q3iAns)
+            if (q3iAns == 0 || q3iAns == 1) {visibleIDs.push("python");}
+            if (q3iAns == 2 || q3iAns == 3) visibleIDs.push("html/css");
+            if (q3iAns == 4) visibleIDs.push("swift");
+            if (q3iAns == 5) visibleIDs.push("android");
+        }
+        else {
+            if (q4Ans == 0 || q4Ans == 1) {
+                if (!q3iiAns[0]) visibleIDs.push("python");
+                visibleIDs.push("flask");
+            }
+            if (q4Ans == 2) {
+                visibleIDs.push("flask");
+                visibleIDs.push("databases");
+            }
+            if (q4Ans == 3) {
+                visibleIDs.push("chrome-apps");
+            }
+            if (q4Ans == 4 || q4Ans == 5) {
+                if (!q3iiAns[2] || !q3iiAns[3]) visibleIDs.push("html/css");
+                if (!q3iiAns[4]) visibleIDs.push("javascript");
+                visibleIDs.push("react")
+            }
+            if (q4Ans == 6) {
+                if (!q3iiAns[4]) visibleIDs.push("javascript");
+                visibleIDs.push("node");
+            }
+            if (q4Ans == 7) {
+                visibleIDs.push("swift");
+            }
+            if (q4Ans == 8) {
+                visibleIDs.push("andriod");
+            }
+        }
+
+        for (var i = 0; i < visibleIDs.length; i++) {
+            document.getElementById(visibleIDs[i]).style.display = "block";
+            console.log(visibleIDs[i]);
+        }
+    }
+
+</script>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper two-section">
+
+    <hr>
+
+    <div class="footer-heading left centered light">
+      <p>
+        <i class="fa fa-copyright"></i> 2020
+        StartHacking.org
+      </p>
+    </div>
+
+    <div class="footer-credits right centered light">
+      <p>
+        <a href="http://starthacking.org/contributing.html"><i class="fa fa-github"></i> Contribute</a>
+        &middot; Released under <a href="https://github.com/starthacking/starthacking.github.io/blob/master/LICENSE.txt">CC BY-SA</a>
+      </p>
+    </div>
+
+  </div>
+
+</footer>
+
+
+  </body>
+
+</html>
