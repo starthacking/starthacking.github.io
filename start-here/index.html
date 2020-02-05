@@ -51,12 +51,19 @@
 
       <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
         <div class="dropdown-content">
-          <a href="/python101">Python 101</a>
-          <a href="/web/">Web apps</a>
-          <a href="/iphone/">iPhone apps</a>
-          <a href="/chrome/">Chrome apps</a>
-          <a href="/android/">Android apps</a>
-          <a href="/other/">Helpful links</a>
+            <a href="/git">Git</a>
+            <a href="/python101">Python 101</a>
+            <a href="/flask">Flask</a>
+            <a href="/databases">Databases</a>
+            <a href="/web/">Web apps</a>
+            <a href="/htmlcss/">HTML & CSS</a>
+            <a href="/javascript/">Javascript</a>
+            <a href="/node/">Node</a>
+            <a href="/React/">React</a>
+            <a href="/iphone/">iPhone apps</a>
+            <a href="/chrome/">Chrome apps</a>
+            <a href="/android/">Android apps</a>
+            <a href="/other/">Helpful links</a>
       </div>
       </li2>
       <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
@@ -104,16 +111,50 @@
     GitHub provide a convenient solution by making version control simple through the command line (like Terminal or Windows Powershell).
     To <i>git</i> started (haha git it?), click through our Git and command line <a href = "/git/">tutorial</a>.</p>
 </div>
-<div id = "python" style = "display:none">python</div>
-<div id = "html/css" style = "display:none">html/css</div>
-<div id = "javascript" style = "display:none">javascript</div>
-<div id = "swift" style = "display:none">swift</div>
-<div id = "android" style = "display:none">android</div>
-<div id = "node" style = "display:none">node</div>
-<div id = "react" style = "display:none">react</div>
-<div id = "chrome-apps" style = "display:none">chrome-apps</div>
-<div id = "flask" style = "display:none">flask</div>
-<div id = "databases" style = "display:none">databases</div>
+<div id = "python" style = "display:none">
+    <h3>Python</h3>
+    <p>Python is an all-purpose programming language that is taught as a first programming language. 
+        Python can be used for a variety of projects, from making number guessing games to calculators to webpages even! To get started, check out our Python <a href = "/python101/">tutorial</a>.</p>
+</div>
+<div id = "html/css" style = "display:none">
+    <h3>HTML and CSS</h3>
+    <p>HTML is a markup language and CSS is a style sheet language. HTML helps you build webpages by putting text, images, and other content into convenient containers. 
+        CSS, which is HTML's sidekick, helps style the containers and content that you want to display. Together these two languages give you a wide range of customizability
+        for your websites. To learn more about HTML and CSS, get started with our <a href = "/htmlcss/">tutorial</a>.</p>
+</div>
+<div id = "javascript" style = "display:none">
+    <h3>Javascript</h3>
+    <p>Oftentimes, the only thing you need is a website to display content. Other times, you might need the user to interact with the website through mouse or text input. 
+        Javascript is a scripting language that is most commonly used with HTML and CSS to make websites dynamic in this way. To learn more about Javascript, click through our <a href = "/javascript/">tutorial</a>.</p>
+</div>
+<div id = "swift" style = "display:none">
+    <h3>Swift</h3>
+    <p>Swift is the programming language for developing iOS apps. To learn Swift, check out the <a href = "/swift/">tutorial</a>. </p>
+</div>
+<div id = "android" style = "display:none">
+    <h3>Android</h3>
+    <p>Java is the programming language for developing Android apps. To learn how to create apps for Android, check out the <a href = "/android/">tutorial</a>. </p>
+</div>
+<div id = "node" style = "display:none">
+    <h3>Node.js</h3>
+    <p>Node.js is a language used for back-end server-side functions that works in conjunction with a front-end, like HTML, CSS, and Javascript to create web apps. To learn more about Node.js, click through our <a href = "/node/">tutorial</a>.</p>
+</div>
+<div id = "react" style = "display:none">
+    <h3>React</h3>
+    <p>React is a framework maintained by Facebook that uses a language that is a mixture of HTML, CSS, and Javascript. React helps you build websites with a variety of prebuilt functions, layouts, and graphics. Get started with React through our <a href = "/react/">tutorial</a>.
+    </p>
+</div>
+<div id = "chrome-apps" style = "display:none">
+    <h3>Chrome Apps</h3>
+    <p>Chrome apps are useful applications or extensions run on Google Chrome. These often end in the Chrome Web store as an app or extension. To learn about creating a Chrome app, click through our <a href = "/chrome/">tutorial</a>.
+    </p>
+</div>
+<div id = "flask" style = "display:none">
+    <h3>Flask</h3>
+    <p>Flask is a Python framework that helps you build websites. On one hand, Flask can be used to build the front-end of apps using templates, which helps rewriting similar blocks of code. On the other hand, Flask can also be used as a back-end for websites. To learn Flask, click through our <a href = "/flask/">tutorial</a>.
+    </p>
+</div>
+<div id = "databases" style = "display:none">Almost all websites and apps need to store data somewhere. When a user clicks through a page, data might be changed, and other users must be able to see these changes. Accomplishing this requires using a database and integrating it with the backend of an app. To learn about databases, check out our <a href = "/databases/">tutorial</a>.</div>
 
 <div id = "q1" style = "display:block">
     <h3>Git and Command Line</h3> 
@@ -153,12 +194,12 @@
     <h3>Project Interest</h3>
     <p>If you could only pick one, which of the following projects is best for you?</p>
     <select id = "q4-select">
-        <option>Create a game using Python!</option>
-        <option>A Pythony Flasky option!</option>
-        <option>Learn how to integrate databases with frameworks like Flask</option>
-        <option>Build a web app for Chrome</option>
-        <option>Use HTML, CSS, and Javascript to build a website</option>
-        <option>Build a web app using frameworks like React</option>
+        <option>Create an interactive, possibly multiplayer, game using Python!</option>
+        <option>Learn how to build websites using templates in Python</option>
+        <option>Learn how to work with big data and moving it from databases to websites</option>
+        <option>Build an app for Chrome that will be released in the Chrome Web Store</option>
+        <option>Use HTML, CSS, and Javascript to build a highly customizable website for a club, organization, or business</option>
+        <option>Learn how to build a dynamic website and web apps using a Javascript-esque framework</option>
         <option>Build a web app using Javascript and Node.js</option>
         <option>Develop a mobile app for iPhones</option>
         <option>Develop a mobile app for Android phones</option>
@@ -170,12 +211,12 @@
     <h3>Project Interest</h3>
     <p>If you could only pick one, which of the following projects is best for you?</p>
     <select id = "q3-i-select">
-        <option>Create an interactive game while learning the basics of programming</option>
-        <option>Another python option that sounds somewhat interesting</option>
-        <option>Build a personal homepage</option>
+        <option>Create an interactive game using the fundamentals of Python</option>
+        <option>Learn how to program a basic calculator with user input in Python</option>
+        <option>Build a personal homepage with photos, blog posts, and more!</option>
         <option>Design a highly customizable website for a club, business, or organization</option>
-        <option>Build a game or tool for an iPhone</option>
-        <option>Build a game or tool for an Andriod phone</option>
+        <option>Develop a mobile app for iPhones</option>
+        <option>Develop a mobile app for Android phones</option>
     </select>
     <button onClick = renderNext()>Finish</button>
 <div>
