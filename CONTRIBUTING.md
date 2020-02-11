@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Contributing
-permalink: /contributing.html
+permalink: /contributing
 ---
 
 [StartHacking.org][starthacking] is a [community effort][contributors], and we greatly

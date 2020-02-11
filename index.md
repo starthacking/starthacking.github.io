@@ -51,11 +51,9 @@ To begin, select your platform:
 <p></p>
 
 This guide is a wiki for hackers -- it's a [community
-effort][contribute]. We really appreciate all kinds of contributions,
+effort]({{ site.url }}/contributing). We really appreciate all kinds of contributions,
 so if you have anything to add, please [do so][contribute]!
 
-StartHacking.org is [open-source][source].
+StartHacking.org is [open-source]({{ site.github }}).
 
-[source]: {{ site.github }}
 [hacker]: https://en.wikipedia.org/wiki/Hacker_culture
-[contribute]: {{ site.url }}/contributing.html
