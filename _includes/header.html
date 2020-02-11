@@ -1,55 +1,41 @@
-<header class="site-header">
-
+<header>
   <div class="wrapper">
     <nav>
-      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';"/>
+      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';" />
       <ul id="nav-menu">
-        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
+        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        </li>
 
-      {% for item in page.hierarchy %}
-        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a></li>
-      {% endfor %}
+        {% for item in page.hierarchy %}
+        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-nav"
+            href="{{ item.path }}">{{ item.name }}</a></li>
+        {% endfor %}
 
-      {% if page.title %}
+        {% if page.title %}
         <li class="small-tablet-up"><i class="fa fa-angle-right"></i> {{ page.title }}</li>
-      {% endif %}
+        {% endif %}
 
-      <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
-        <div class="dropdown-content">
-          <a href="/python101">Python 101</a>
-          <a href="/web/">Web apps</a>
-          <a href="/iphone/">iPhone apps</a>
-          <a href="/chrome/">Chrome apps</a>
-          <a href="/android/">Android apps</a>
-          <a href="/other/">Helpful links</a>
-      </div>
-      </li2>
-      <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
-        <div class="dropdown-content">
-          <a href="/mac/">Mac</a>
-          <a href="/windows/">Windows</a>
-          <a href="/gnu-linux/">GNU / Linux</a>
-          </div></li2>
-      <li2 style="float:right" class ="dropdown"><a href="{{ site.baseurl }}/" class="dropbtn">Home</a></li2>
+        <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
+          <div class="dropdown-content">
+            <a href="/python101">Python 101</a>
+            <a href="/web/">Web apps</a>
+            <a href="/iphone/">iPhone apps</a>
+            <a href="/chrome/">Chrome apps</a>
+            <a href="/android/">Android apps</a>
+            <a href="/other/">Helpful links</a>
+          </div>
+        </li2>
+        <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
+          <div class="dropdown-content">
+            <a href="/mac/">Mac</a>
+            <a href="/windows/">Windows</a>
+            <a href="/gnu-linux/">GNU / Linux</a>
+          </div>
+        </li2>
+        <li2 style="float:right" class="dropdown"><a href="{{ site.baseurl }}/" class="dropbtn">Home</a></li2>
       </ul>
     </nav>
     <br class="small-tablet-down">
     <hr>
-
   </div>
-  <style>
-
-  </style>
-
-
-  <!-- <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-
-  </div> -->
-
-
-
 </header>
