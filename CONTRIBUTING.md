@@ -4,8 +4,6 @@ title: Contributing
 permalink: /contributing.html
 ---
 
-# Contributing
-
 [StartHacking.org][starthacking] is a [community effort][contributors], and we greatly
 appreciate contributions of all kinds.
 
@@ -45,26 +43,26 @@ All the content is written in [Markdown][markdown] files with [Liquid][liquid]
 templating (the stuff enclosed in `{}`) and [YAML front-matter][yaml] (the
 stuff enclosed in `---` at the top).
 
-To start, clone this repository recursively and change directories.
+To start, clone this repository and change directories.
 
-~~~
-git clone --recursive git@github.com:starthacking/starthacking.github.io.git
+```bash
+git clone git@github.com:starthacking/starthacking.github.io.git
 cd starthacking.github.io
-~~~
+```
 
 ### Building
 
-To build and run StartHacking.org on your own computer, first 
-[install Ruby][ruby], then [bundler][bundler], then run the following inside
-the `starthacking.github.io` folder:
+To build and run StartHacking.org on your own computer, first [install
+Ruby][ruby], then [bundler][bundler], then run the following inside the
+`starthacking.github.io` folder:
 
 Run `bundle install` to fetch and install dependencies.
 
 Run `bundle exec jekyll build` to build the site (into the `_site` directory).
 
-For development purposes, it's helpful to run `bundle exec jekyll 
-serve --watch`. This will watch the source for changes, rebuild when necessary,
-and serve the site at `http://localhost:4000`.
+For development purposes, it's helpful to run `bundle exec jekyll serve
+--watch`. This will watch the source for changes, rebuild when necessary, and
+serve the site at `http://localhost:4000`.
 
 ### Workflow
 
@@ -72,7 +70,7 @@ When working on a new feature, [branch][help-branch] off `master`. Pull
 requests are merged in using non-fast-forward merges using `git merge --no-ff`.
 
 The `master` branch is the live version of the site that is available at
-http://starthacking.org.
+[https://starthacking.org](https://starthacking.org).
 
 ### Patches
 
@@ -80,24 +78,25 @@ We love it when people submit new content to StartHacking.org! Start by
 [forking][fork] StartHacking.org, then add some content, then submit a [pull
 request][help-pr].
 
-When submitting a pull request, your version history should be clean, and your
-commit messages should be descriptive and [properly
+When submitting a pull request, your version history should be clean, and
+your commit messages should be descriptive and [properly
 formatted][commit-message-formatting].
 
 ### Style
 
-This project uses [EditorConfig][editorconfig] to make it easier to maintain a
-consistent code style. We highly recommend that you use the plugin.
+This project uses [EditorConfig][editorconfig] to make it easier to maintain
+a consistent code style. We highly recommend that you use the plugin.
 
-[Plugin for: [Sublime][ec-sublime], [Vim][ec-vim], [Emacs][ec-emacs], [Atom][ec-atom], 
-[Other][editorconfig]]
+[Plugin for: [Sublime][ec-sublime], [Vim][ec-vim], [Emacs][ec-emacs],
+[Atom][ec-atom], [Other][editorconfig]]
 
-There are other conventions (such as 80-column lines) that are not captured in the EditorConfig.
-In addition, please try your best to maintain consistency with the rest of the
-project in terms of formatting, writing style, and coding style.
+There are other conventions (such as 80-column lines) that are not captured
+in the EditorConfig. In addition, please try your best to maintain
+consistency with the rest of the project in terms of formatting, writing
+style, and coding style.
 
-If you have any questions about anything, feel free to open an [issue][issue] asking for
-help or ask over [email][email].
+If you have any questions about anything, feel free to open an [issue][issue]
+asking for help or ask over [email][email].
 
 [issue]: https://github.com/starthacking/starthacking.github.io/issues
 [fork]: https://github.com/starthacking/starthacking.github.io/fork
