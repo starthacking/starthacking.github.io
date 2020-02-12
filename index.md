@@ -32,9 +32,9 @@ hacking!
 
 To begin, select your platform:
 
-* [Mac](/mac/)
-* [Windows](/windows/)
-* [GNU/Linux](/gnu-linux/)
+- [Mac](/mac/)
+- [Windows](/windows/)
+- [GNU/Linux](/gnu-linux/)
 
 ### About
 
