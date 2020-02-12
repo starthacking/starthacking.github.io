@@ -141,6 +141,29 @@ code, pre {
   font-family: "Anonymous Pro","Bitstream Vera Sans Mono","Consolas","Courier",monospace;
 }
 
+table {
+    border-collapse: collapse;
+    margin: 0.75dm 0;
+    table-layout: fixed;
+    width: 100%;
+}
+
+th {
+    border-bottom: 1px solid #b7b7b7;
+    font-weight: bold;
+    padding: 0.75em 0;
+    text-align: left;
+}
+
+td {
+    border-bottom: 1px solid #ddd;
+    padding: 0.75em 0;
+}
+
+tr, td, th {
+vertical-align: middle;
+}
+
 /* Header */
 
 nav {
