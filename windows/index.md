@@ -19,29 +19,27 @@ Python is a really cool programming language that’s super easy to learn.
 We’ll be using Python for most of our starting projects. We’d recommend
 getting a specific flavor of python called Anaconda.
 
-You should get the Python 3 version of Anconda from:
-https://www.anaconda.com/download/#windows
+You should get the Python 3 version of Anconda from [here][anaconda].
 
 Once downloaded, run the installer and follow the on screen instructions.
+Reference [these instructions][anaconda-install] if you get stuck.
 
-Make sure you check these two boxes and install it for All Users.
+Make sure you check the two boxes to install it for All Users, not Just Me.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_07F53CA997B29221D09CB95FFBF7C2E3B37530495452EA3598CA7A75DBF809E5_1516335198517_image.png)
-
-
-Alright, once Anaconda is installed, you need to restart your computer.
+Once Anaconda is installed, restart your computer.
 
 After your computer has finished restarting hit the start button and type
 `cmd` into the search box, which should open the Command Prompt. It should
 look like this:
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_07F53CA997B29221D09CB95FFBF7C2E3B37530495452EA3598CA7A75DBF809E5_1517193644227_image.png)
+![Windows command
+prompt](https://upload.wikimedia.org/wikipedia/commons/b/b3/Command_Prompt_on_Windows_10_RTM.png)
 
-Of course it’ll say the computer’s username instead of my name for the file
-path. Now go ahead and type in `python` in the command prompt and press
-`ENTER`
+Of course it’ll say your computer’s username instead of `Brennan` for the file
+path. Now go ahead and type in `python` in the command prompt and press `ENTER`.
 
-![](https://d2mxuefqeaa7sj.cloudfront.net/s_07F53CA997B29221D09CB95FFBF7C2E3B37530495452EA3598CA7A75DBF809E5_1517193716904_image.png)
+![Python in the command
+prompt](https://devblogs.microsoft.com/python/wp-content/uploads/sites/12/2019/05/Python_After.png)
 
 You should now see the python command window! To exit out of this hit `Ctrl +
 Z` and then the `ENTER` key, which will take you back to the normal command
@@ -52,7 +50,7 @@ prompt.
 Turns out that Anaconda, the Python distribution we just installed already
 comes with libraries required to get started with web development :smile:
 
-Now you're all set to start hacking! Happy Coding!! ^_^
+Now you're all set to start hacking! Happy Coding!! `^_^`
 
 ## Getting Started with [x]
 
@@ -61,3 +59,6 @@ Now you're all set to start hacking! Happy Coding!! ^_^
 - [{{ post.title }}]({{ post.url }})
     {% endif %}
 {% endfor %}
+
+[anaconda]: https://starthacking.org/arduino/
+[anaconda-install]: https://docs.anaconda.com/anaconda/install/windows/
