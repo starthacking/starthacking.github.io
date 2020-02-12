@@ -13,11 +13,6 @@ hierarchy:
 
 There's always more to learn!
 
-## Getting Started with Git
-
-- [An Intro to Git][git1] and GitHub for Beginners
-- [GitHub Guides Hello World][git2]
-
 ## Flask
 
 - [Quickstart in Flask][flask1]
@@ -31,8 +26,6 @@ There's always more to learn!
 - [Basic Node.js Express App][node3] with Mongo and EJS templating
 - [Chat/Game Platform][node4]
 
-[git1]:https://product.hubspot.com/blog/git-and-github-tutorial-for-beginners
-[git2]:https://guides.github.com/activities/hello-world/
 [flask1]:http://flask.pocoo.org/docs/1.0/quickstart/
 [flask2]: https://projynnie.wordpress.com/2017/06/05/flask-todo-app-tutorial-p1-hello-world/
 [flask3]: https://blog.miguelgrinberg.com/post/the-flask-mega-tutorial-part-i-hello-world
