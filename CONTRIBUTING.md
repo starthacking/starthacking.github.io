@@ -4,11 +4,12 @@ title: Contributing
 permalink: /contributing
 ---
 
-[StartHacking.org][starthacking] is a [community effort][contributors], and we greatly
-appreciate contributions of all kinds.
+[StartHacking.org][starthacking] is a [community effort][contributors], and
+we greatly appreciate contributions of all kinds.
 
-The easiest way to contribute is through [content requests](#content-requests) or
-[bug reports](#bug-reports). Describe what you want or what went wrong!
+The easiest way to contribute is through [content
+requests](#content-requests) or [bug reports](#bug-reports). Describe what
+you want or what went wrong!
 
 If you want to contribute content, first [open an issue][issue] describing
 your addition to get early feedback on the content that you are adding.
@@ -56,13 +57,18 @@ To build and run StartHacking.org on your own computer, first [install
 Ruby][ruby], then [bundler][bundler], then run the following inside the
 `starthacking.github.io` folder:
 
-Run `bundle install` to fetch and install dependencies.
+```bash
+bundle install
+```
 
-Run `bundle exec jekyll build` to build the site (into the `_site` directory).
+For development purposes, run
 
-For development purposes, it's helpful to run `bundle exec jekyll serve
---watch`. This will watch the source for changes, rebuild when necessary, and
-serve the site at `http://localhost:4000`.
+```bash
+bundle exec jekyll serve --watch
+```
+
+This will watch the source for changes, rebuild when necessary, and serve the
+site at `http://localhost:4000`.
 
 ### Workflow
 
