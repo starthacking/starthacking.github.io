@@ -9,8 +9,6 @@ hierarchy:
     path: "/topics"
 ---
 
-# Windows Setup
-
 Fun Fact: You need software to make software. Who would have thought. This
 guide will help you prep your computer such that you can build awesome
 software ~

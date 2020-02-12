@@ -3,8 +3,6 @@ layout: page
 title: GNU / Linux Setup
 ---
 
-# GNU/ Linux Setup
-
 There are many different GNU/Linux distros, but this guide is going to cover
 Ubuntu, which is one of the more common ones. The first thing you're going to
 need is the `build-essential` package, which contains the `gcc` and `g++`

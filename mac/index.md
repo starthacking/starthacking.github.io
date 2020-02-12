@@ -3,10 +3,6 @@ layout: page
 title: Mac Setup
 ---
 
-# Mac Setup
-
-## First Steps
-
 Before doing any serious hacking, you should install the Command Line Tools
 for Xcode and Homebrew. The CLI tools contain utilities and compilers such as
 make, gcc, git, and so on. [Homebrew][brew] is a package manager for Mac OS X
