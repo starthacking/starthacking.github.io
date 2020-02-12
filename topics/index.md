@@ -5,6 +5,6 @@ title: All Topics
 
 ## Getting started with [x]
 
-{% for post in site.posts %}
-- [{{ post.title }}]({{ post.url }})
+{% for topic in site.topics %}
+- [{{ topic.title }}]({{ topic.url }})
 {% endfor %}

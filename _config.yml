@@ -16,6 +16,10 @@ kramdown:
   hard_wrap: false
 highlighter: rouge
 
+collections:
+  topics:
+    output: true
+
 # Permalinks
 permalink: /:title/
 

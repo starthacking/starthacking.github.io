@@ -35,9 +35,9 @@ different interactive features.
 
 ## Getting Started With [x]
 
-{% for post in site.posts %}
-    {% if post.categories contains 'web' %}
-- [{{ post.title }}]({{ post.url }})
+{% for topic in site.topics %}
+    {% if topic.categories contains 'web' %}
+- [{{ topic.title }}]({{ topic.url }})
     {% endif %}
 {% endfor %}
 

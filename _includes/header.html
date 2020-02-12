@@ -1,7 +1,8 @@
 <header>
   <div class="wrapper">
     <nav>
-      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';" />
+      <img id="sh-logo" src="{{ site.url}}/assets/Logo textless.svg"
+        onclick="document.location.href='{{ site.baseurl }}/';" />
       <ul id="nav-menu">
         <li class="small-tablet-up">> <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         </li>
@@ -16,9 +17,9 @@
 
         <li2 style="float:right" class="dropdown"><a href="{{ site.url }}/topics" class="dropbtn">Topics</a>
           <div class="dropdown-content">
-            {% assign sortedPosts = site.posts | sort: 'title' %}
-            {% for post in sortedPosts %}
-            <a href="{{ post.url }}">{{ post.title }}</a>
+            {% assign sortedTopics = site.topics | sort: 'title' %}
+            {% for topic in sortedTopics %}
+            <a href="{{ topic.url }}">{{ topic.title }}</a>
             {% endfor %}
           </div>
         </li2>

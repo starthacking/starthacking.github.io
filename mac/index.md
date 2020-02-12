@@ -41,9 +41,9 @@ Now you're all set to start hacking!
 
 ## Getting Started with [x]
 
-{% for post in site.posts %}
-    {% if post.categories contains 'mac' %}
-- [{{ post.title }}]({{ post.url }})
+{% for topic in site.topics %}
+    {% if topic.categories contains 'mac' %}
+- [{{ topic.title }}]({{ topic.url }})
     {% endif %}
 {% endfor %}
 
