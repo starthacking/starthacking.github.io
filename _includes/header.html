@@ -15,7 +15,7 @@
         <li class="small-tablet-up"><i class="fa fa-angle-right"></i> {{ page.title }}</li>
         {% endif %}
 
-        <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
+        <li2 style="float:right" class="dropdown"><a href="{{ site.url }}/topics" class="dropbtn">Topics</a>
           <div class="dropdown-content">
             {% assign sortedPosts = site.posts | sort: 'title' %}
             {% for post in sortedPosts %}
