@@ -271,9 +271,12 @@ li2 a, .dropbtn {
     padding-left: 1.5em;
 }
 
-.footer {
-    font-size: 0.75rem;
+.center {
     text-align: center;
+}
+
+.small {
+    font-size: 0.75rem;
 }
 
 /* Media queries */
