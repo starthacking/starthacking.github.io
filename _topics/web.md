@@ -15,7 +15,7 @@ In a nutshell, websites are made of HTML, CSS, and JavaScript.
 
 ### HTML and CSS
 
-HTML stands for Hyper Text Markup Language and will create the structure and
+HTML stands for Hypertext Markup Language and will create the structure and
 content of your web page. CSS stands for Cascading Style Sheets and describes
 how your HTML elements look on screen. They often work together to create
 your page and make it pretty. Here are a few tutorials to help you get

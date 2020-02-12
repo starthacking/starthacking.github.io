@@ -88,9 +88,9 @@ you get to the domain name you request (as in the figure below).
 So what really happens when you type `google.com` into your browser? Once DNS
 translates the domain name into an IP address, your request is sent to the
 Google server with that IP address. This request is went over the
-**HyperText Transfer Protocol** (HTTP). **HyperText** is structured text that
+**Hypertext Transfer Protocol** (HTTP). **Hypertext** is structured text that
 contains connections (links, or URLs) between servers containing text.
-Therefore, the HyperText Transfer Protocol specifies how to transfer
+Therefore, the Hypertext Transfer Protocol specifies how to transfer
 hypertext between servers. This is why most URLs are prefixed with
 **`http://`**`facebook.com`. When you add the `http://`, you're telling your
 web browser to use the HTTP protocol (as opposed to HTTPS, FTP, etc.).
