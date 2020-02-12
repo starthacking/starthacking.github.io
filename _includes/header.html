@@ -17,12 +17,10 @@
 
         <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Tutorials</a>
           <div class="dropdown-content">
-            <a href="/python101">Python 101</a>
-            <a href="/web/">Web apps</a>
-            <a href="/iphone/">iPhone apps</a>
-            <a href="/chrome/">Chrome apps</a>
-            <a href="/android/">Android apps</a>
-            <a href="/other/">Helpful links</a>
+            {% assign sortedPosts = site.posts | sort: 'title' %}
+            {% for post in sortedPosts %}
+            <a href="{{ post.url }}">{{ post.title }}</a>
+            {% endfor %}
           </div>
         </li2>
         <li2 style="float:right" class="dropdown"><a href="javascript:void(0)" class="dropbtn">Setup</a>
