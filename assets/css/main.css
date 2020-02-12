@@ -272,9 +272,8 @@ li2 a, .dropbtn {
 }
 
 .footer {
-    display: flex;
-    justify-content: space-around;
-    flex-wrap: wrap;
+    font-size: 0.75rem;
+    text-align: center;
 }
 
 /* Media queries */

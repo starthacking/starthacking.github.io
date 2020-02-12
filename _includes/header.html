@@ -3,16 +3,15 @@
     <nav>
       <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';" />
       <ul id="nav-menu">
-        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a href="{{ site.baseurl }}/">{{ site.title }}</a>
+        <li class="small-tablet-up">> <a href="{{ site.baseurl }}/">{{ site.title }}</a>
         </li>
 
         {% for item in page.hierarchy %}
-        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-nav"
-            href="{{ item.path }}">{{ item.name }}</a></li>
+        <li class="small-tablet-up">> <a class="site-nav" href="{{ item.path }}">{{ item.name }}</a></li>
         {% endfor %}
 
         {% if page.title %}
-        <li class="small-tablet-up"><i class="fa fa-angle-right"></i> {{ page.title }}</li>
+        <li class="small-tablet-up">> {{ page.title }}</li>
         {% endif %}
 
         <li2 style="float:right" class="dropdown"><a href="{{ site.url }}/topics" class="dropbtn">Topics</a>
