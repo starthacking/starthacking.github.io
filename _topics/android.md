@@ -1,40 +1,38 @@
 ---
 layout: page
-title: Android App
+title: Android app
 categories:
-    - mac
-    - windows
-    - gnu-linux
+  - mac
+  - windows
+  - gnu-linux
 hierarchy:
   -
     name: "Topics"
     path: "/topics"
 ---
-# Android App
-
-<p></p>
 
 ## Background
 
-Android apps are programmed in Java. If you're new to Java, here are a few tutorials to help you get started!
+Android apps are programmed in Java. If you're new to Java, here are a few
+tutorials to help you get started!
 
-- If you're new to programming in Java, or you
-want an in-depth, involved tutorial that takes you through
-Java from the ground up, we recommend
-[Codecademy][codecademy]. 
-- If you're an expert in several programming languages already, or
-you used to know Java and you just need a refresher on the
-syntax, check out [Learn X in Y Minutes][xiny]. 
-- If you have some experience in Python, you can check out [Java for Python Programmers][java-for-python].
+- If you're new to programming in Java, or you want an in-depth, involved
+  tutorial that takes you through Java from the ground up, we recommend
+  [Codecademy][codecademy].
+- If you're an expert in several programming languages already, or you used
+  to know Java and you just need a refresher on the syntax, check out [Learn X
+  in Y Minutes][xiny].
+- If you have some experience in Python, you can check out [Java for Python
+  Programmers][java-for-python].
 - If you want a comprehensive tutorial of all things Java,
-check out [W3Schools][w3schools]. 
+  check out [W3Schools][w3schools]. 
 
 Now you're one step closer to making your own Android app!
 
 ## Installation
 
-Before you get started, you should make sure that you have JDK 6 or higher. You
-can check this by opening up a terminal and running `javac -version`. If
+Before you get started, you should make sure that you have JDK 6 or higher.
+You can check this by opening up a terminal and running `javac -version`. If
 successful, the output should look something like `javac 1.7.0_45`. Anything
 greater than `1.6` is fine. Otherewise, you can get JDK [here][jdk-download].
 
@@ -55,19 +53,21 @@ You can install Android Studio by following these steps:
 
 ## Tutorials
 
-You're all set to start coding! Here are tutorials to get familiar with Android Studio on how to create an app and run/test it 🙂 
+You're all set to start coding! Here are tutorials to get familiar with
+Android Studio on how to create an app and run/test it :smile:
 
--  [Building your first app][first-app]
--  [Intro to Android Development][upenn]
--  [Getting started with Android Studio][vogella]
--  [Video tutorials for specific features][vids]
+- [Building your first app][first-app]
+- [Intro to Android Development][upenn]
+- [Getting started with Android Studio][vogella]
+- [Video tutorials for specific features][vids]
 
 ## Projects
 
-Looking for more fun? Take a look at some projects that you can make with Android Studio.
- 
--  [TicTacToe][tictac]
--  [Collision game][collision]
+Looking for more fun? Take a look at some projects that you can make with
+Android Studio.
+
+- [TicTacToe][tictac]
+- [Collision game][collision]
 
 [jdk-download]: http://www.oracle.com/technetwork/java/javase/downloads/index.html
 [download]: http://developer.android.com/sdk/index.html
@@ -82,5 +82,3 @@ Looking for more fun? Take a look at some projects that you can make with Androi
 [collision]:https://www.youtube.com/playlist?list=PL2xjPbQaM7JZ_FmXwTAesiAciHEPlGmiW
 [tictac]:https://www.youtube.com/watch?v=uHzNwhU_Nvg
 [upenn]:https://www.seas.upenn.edu/~cis195/android/lectures.html
-
-

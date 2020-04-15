@@ -1,8 +1,8 @@
-<header class="site-header">
-
+<header>
   <div class="wrapper">
     <nav>
-      <img id="sh-logo" src="../assets/Logo textless.svg" onclick="document.location.href='{{ site.baseurl }}/';"/>
+      <img id="sh-logo" src="{{ site.url}}/assets/Logo textless.svg"
+        onclick="document.location.href='{{ site.baseurl }}/';" />
       <ul id="nav-menu">
         <li class="small-tablet-up"><i class="fa fa-angle-right"></i> <a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></li>
 
@@ -43,21 +43,5 @@
     </nav>
     <br class="small-tablet-down">
     <hr>
-
   </div>
-  <style>
-
-  </style>
-
-
-  <!-- <div class="topnav">
-    <a class="active" href="#home">Home</a>
-    <a href="#news">News</a>
-    <a href="#contact">Contact</a>
-    <a href="#about">About</a>
-
-  </div> -->
-
-
-
 </header>
