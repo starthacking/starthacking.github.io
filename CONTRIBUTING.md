@@ -52,6 +52,13 @@ git clone --recursive git@github.com:starthacking/starthacking.github.io.git
 cd starthacking.github.io
 ~~~
 
+`bourbon` and `neat` are git submodules, so you will need to initialize them:
+
+~~~
+git submodule init
+git submodule update
+~~~
+
 ### Building
 
 To build and run StartHacking.org on your own computer, first 
