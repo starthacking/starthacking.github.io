@@ -1,0 +1,26 @@
+@import "../../neat/app/assets/stylesheets/neat-helpers";
+
+// Neat Overrides
+// $column: 90px;
+// $gutter: 30px;
+$grid-columns: 4;
+$max-width: em(900);
+
+// Debugging
+$visual-grid: false;
+$visual-grid-color: red;
+$visual-grid-index: front;
+$visual-grid-opacity: 0.1;
+
+// Neat Breakpoints
+$medium-screen: em(640);
+
+$medium-screen-up: new-breakpoint(min-width $medium-screen 12);
+
+@mixin mobile-large {
+  @media screen and (max-width: 899px) { @content; }
+}
+
+@mixin tablet-up {
+  @media screen and (min-width: 900px) { @content; }
+}

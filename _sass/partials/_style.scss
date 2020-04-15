@@ -1,0 +1,11 @@
+.page-content {
+  @include mobile-large{
+      margin: 20px;
+  }
+  ul {
+    @extend %default-ul;
+  }
+  ol {
+    @extend %default-ol;
+  }
+}

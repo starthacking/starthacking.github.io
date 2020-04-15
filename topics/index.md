@@ -3,8 +3,11 @@ layout: page
 title: All Topics
 ---
 
-## Getting started with [x]
+# Getting Started With [x]
+<p></p>
 
-{% for topic in site.topics %}
-- [{{ topic.title }}]({{ topic.url }})
+{% for post in site.posts %}
+    {% if post.categories contains 'windows' or post.categories contains 'mac' %}
+* [{{ post.title }}]({{ post.url }})
+    {% endif %}
 {% endfor %}
